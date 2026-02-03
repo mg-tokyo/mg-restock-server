@@ -2,66 +2,71 @@
   "decor:SmallRock": {
     "itemId": "SmallRock",
     "shopType": "decor",
-    "totalOccurrences": 4,
+    "totalOccurrences": 5,
     "firstSeen": 1770105624507,
-    "lastSeen": 1770116862608,
+    "lastSeen": 1770121644310,
     "recentTimestamps": [
       1770105624507,
       1770111964386,
       1770114351051,
-      1770116862608
+      1770116862608,
+      1770121644310
     ]
   },
   "decor:MediumRock": {
     "itemId": "MediumRock",
     "shopType": "decor",
-    "totalOccurrences": 4,
+    "totalOccurrences": 5,
     "firstSeen": 1770105624507,
-    "lastSeen": 1770116862608,
+    "lastSeen": 1770121644310,
     "recentTimestamps": [
       1770105624507,
       1770111964386,
       1770114351051,
-      1770116862608
+      1770116862608,
+      1770121644310
     ]
   },
   "decor:StringLights": {
     "itemId": "StringLights",
     "shopType": "decor",
-    "totalOccurrences": 4,
+    "totalOccurrences": 5,
     "firstSeen": 1770105624507,
-    "lastSeen": 1770116862608,
+    "lastSeen": 1770121644310,
     "recentTimestamps": [
       1770105624507,
       1770111964386,
       1770114351051,
-      1770116862608
+      1770116862608,
+      1770121644310
     ]
   },
   "decor:WoodBench": {
     "itemId": "WoodBench",
     "shopType": "decor",
-    "totalOccurrences": 4,
+    "totalOccurrences": 5,
     "firstSeen": 1770105624507,
-    "lastSeen": 1770116862608,
+    "lastSeen": 1770121644310,
     "recentTimestamps": [
       1770105624507,
       1770111964386,
       1770114351051,
-      1770116862608
+      1770116862608,
+      1770121644310
     ]
   },
   "decor:WoodArch": {
     "itemId": "WoodArch",
     "shopType": "decor",
-    "totalOccurrences": 4,
+    "totalOccurrences": 5,
     "firstSeen": 1770105624507,
-    "lastSeen": 1770116862608,
+    "lastSeen": 1770121644310,
     "recentTimestamps": [
       1770105624507,
       1770111964386,
       1770114351051,
-      1770116862608
+      1770116862608,
+      1770121644310
     ]
   },
   "decor:WoodWindmill": {
@@ -77,76 +82,82 @@
   "decor:StoneBench": {
     "itemId": "StoneBench",
     "shopType": "decor",
-    "totalOccurrences": 4,
+    "totalOccurrences": 5,
     "firstSeen": 1770105624507,
-    "lastSeen": 1770116862608,
+    "lastSeen": 1770121644310,
     "recentTimestamps": [
       1770105624507,
       1770111964386,
       1770114351051,
-      1770116862608
+      1770116862608,
+      1770121644310
     ]
   },
   "decor:StoneArch": {
     "itemId": "StoneArch",
     "shopType": "decor",
-    "totalOccurrences": 4,
+    "totalOccurrences": 5,
     "firstSeen": 1770105624507,
-    "lastSeen": 1770116862608,
+    "lastSeen": 1770121644310,
     "recentTimestamps": [
       1770105624507,
       1770111964386,
       1770114351051,
-      1770116862608
+      1770116862608,
+      1770121644310
     ]
   },
   "decor:MarbleBench": {
     "itemId": "MarbleBench",
     "shopType": "decor",
-    "totalOccurrences": 1,
+    "totalOccurrences": 2,
     "firstSeen": 1770105624507,
-    "lastSeen": 1770105624507,
+    "lastSeen": 1770121644310,
     "recentTimestamps": [
-      1770105624507
+      1770105624507,
+      1770121644310
     ]
   },
   "decor:PetHutch": {
     "itemId": "PetHutch",
     "shopType": "decor",
-    "totalOccurrences": 4,
+    "totalOccurrences": 5,
     "firstSeen": 1770105624507,
-    "lastSeen": 1770116862608,
+    "lastSeen": 1770121644310,
     "recentTimestamps": [
       1770105624507,
       1770111964386,
       1770114351051,
-      1770116862608
+      1770116862608,
+      1770121644310
     ]
   },
   "decor:DecorShed": {
     "itemId": "DecorShed",
     "shopType": "decor",
-    "totalOccurrences": 4,
+    "totalOccurrences": 5,
     "firstSeen": 1770105624507,
-    "lastSeen": 1770116862608,
+    "lastSeen": 1770121644310,
     "recentTimestamps": [
       1770105624507,
       1770111964386,
       1770114351051,
-      1770116862608
+      1770116862608,
+      1770121644310
     ]
   },
   "decor:SeedSilo": {
     "itemId": "SeedSilo",
     "shopType": "decor",
-    "totalOccurrences": 4,
+    "totalOccurrences": 5,
     "firstSeen": 1770105624507,
-    "lastSeen": 1770116862608,
+    "lastSeen": 1770121644310,
     "recentTimestamps": [
       1770105624507,
       1770111964386,
       1770114351051,
-      1770116862608
+      1770116862608,
+      1770121644310
     ]
   },
   "decor:WoodBridge": {
@@ -188,6 +199,16 @@
     "lastSeen": 1770116862608,
     "recentTimestamps": [
       1770116862608
+    ]
+  },
+  "decor:WoodPergola": {
+    "itemId": "WoodPergola",
+    "shopType": "decor",
+    "totalOccurrences": 1,
+    "firstSeen": 1770121644310,
+    "lastSeen": 1770121644310,
+    "recentTimestamps": [
+      1770121644310
     ]
   }
 }
