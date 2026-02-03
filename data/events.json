@@ -1,5 +1,44 @@
 [
   {
+    "shopType": "seed",
+    "timestamp": 1770108955510,
+    "items": [
+      {
+        "itemId": "Carrot",
+        "stock": 9
+      },
+      {
+        "itemId": "Cabbage",
+        "stock": 3
+      },
+      {
+        "itemId": "Strawberry",
+        "stock": 4
+      },
+      {
+        "itemId": "Aloe",
+        "stock": 10
+      },
+      {
+        "itemId": "Beet",
+        "stock": 10
+      },
+      {
+        "itemId": "FavaBean",
+        "stock": 4
+      },
+      {
+        "itemId": "Blueberry",
+        "stock": 5
+      },
+      {
+        "itemId": "BurrosTail",
+        "stock": 2
+      }
+    ],
+    "reason": "timer"
+  },
+  {
     "shopType": "egg",
     "timestamp": 1770108761663,
     "items": [
