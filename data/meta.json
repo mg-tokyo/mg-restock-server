@@ -1,8 +1,11 @@
 {
-  "version": 1,
-  "lastUpdated": null,
+  "lastUpdated": 1770105624507,
   "source": "https://mg-api.ariedam.fr/live/shops",
-  "importedAt": 1769944415316,
-  "importSource": "discord-html",
-  "importFile": "Magic Circle - 🍄 Magic Garden - ping [1392142706964303933].html"
+  "shopTypes": [
+    "seed",
+    "egg",
+    "decor"
+  ],
+  "eventCount": 9333,
+  "historyCount": 300
 }

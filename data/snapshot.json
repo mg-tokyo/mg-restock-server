@@ -1,1 +1,137 @@
-{}
+{
+  "seed": {
+    "secondsUntilRestock": 276,
+    "items": [
+      {
+        "name": "Carrot",
+        "stock": 13
+      },
+      {
+        "name": "Cabbage",
+        "stock": 2
+      },
+      {
+        "name": "Strawberry",
+        "stock": 2
+      },
+      {
+        "name": "Aloe",
+        "stock": 6
+      },
+      {
+        "name": "Beet",
+        "stock": 10
+      },
+      {
+        "name": "FavaBean",
+        "stock": 2
+      },
+      {
+        "name": "Blueberry",
+        "stock": 1
+      },
+      {
+        "name": "Apple",
+        "stock": 1
+      },
+      {
+        "name": "OrangeTulip",
+        "stock": 20
+      },
+      {
+        "name": "Tomato",
+        "stock": 1
+      },
+      {
+        "name": "Echeveria",
+        "stock": 2
+      },
+      {
+        "name": "Pear",
+        "stock": 2
+      },
+      {
+        "name": "Banana",
+        "stock": 1
+      },
+      {
+        "name": "Lily",
+        "stock": 2
+      },
+      {
+        "name": "Camellia",
+        "stock": 1
+      },
+      {
+        "name": "BurrosTail",
+        "stock": 3
+      },
+      {
+        "name": "Mushroom",
+        "stock": 17
+      }
+    ]
+  },
+  "egg": {
+    "secondsUntilRestock": 876,
+    "items": [
+      {
+        "name": "CommonEgg",
+        "stock": 1
+      }
+    ]
+  },
+  "decor": {
+    "secondsUntilRestock": 3576,
+    "items": [
+      {
+        "name": "SmallRock",
+        "stock": 4
+      },
+      {
+        "name": "MediumRock",
+        "stock": 3
+      },
+      {
+        "name": "StringLights",
+        "stock": 2
+      },
+      {
+        "name": "WoodBench",
+        "stock": 2
+      },
+      {
+        "name": "WoodArch",
+        "stock": 2
+      },
+      {
+        "name": "WoodWindmill",
+        "stock": 1
+      },
+      {
+        "name": "StoneBench",
+        "stock": 2
+      },
+      {
+        "name": "StoneArch",
+        "stock": 2
+      },
+      {
+        "name": "MarbleBench",
+        "stock": 1
+      },
+      {
+        "name": "PetHutch",
+        "stock": 1
+      },
+      {
+        "name": "DecorShed",
+        "stock": 1
+      },
+      {
+        "name": "SeedSilo",
+        "stock": 1
+      }
+    ]
+  }
+}

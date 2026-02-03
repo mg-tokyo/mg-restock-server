@@ -482,5 +482,15 @@
       1767147300000,
       1767986100000
     ]
+  },
+  "egg:CommonEgg": {
+    "itemId": "CommonEgg",
+    "shopType": "egg",
+    "totalOccurrences": 1,
+    "firstSeen": 1770105624507,
+    "lastSeen": 1770105624507,
+    "recentTimestamps": [
+      1770105624507
+    ]
   }
 }
