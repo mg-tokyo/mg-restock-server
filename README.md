@@ -4,13 +4,13 @@ This repo builds shop restock history without a VPS by polling the live shop sna
 
 ## Data files
 
-- `data/snapshot.json` — last live snapshot
-- `data/events.json` — rolling list of restock events (capped)
-- `data/history.json` — aggregated per-item history
-- `data/history-seed.json` — seed-only history
-- `data/history-egg.json` — egg-only history
-- `data/history-decor.json` — decor-only history
-- `data/meta.json` — metadata
+- `data/snapshot.json` â€” last live snapshot
+- `data/events.json` â€” rolling list of restock events (capped)
+- `data/history.json` â€” aggregated per-item history
+- `data/history-seed.json` â€” seed-only history
+- `data/history-egg.json` â€” egg-only history
+- `data/history-decor.json` â€” decor-only history
+- `data/meta.json` â€” metadata
 
 ## Scripts
 
@@ -28,5 +28,5 @@ The workflow runs every minute and commits updated data automatically.
 Use the Discord HTML export as a base for events + history:
 
 ```bash
-npm run import:html "C:\Users\ryand\Feeder-Extension\Gemini-folder\Gemini-server\restock examples\Magic Circle - ?? Magic Garden - ping [1392142706964303933].html"
+npm run import:html "Gemini-server\restock examples\Magic Circle - ?? Magic Garden - ping [1392142706964303933].html"
 ```
