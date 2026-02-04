@@ -1,6 +1,135 @@
 [
   {
     "shopType": "decor",
+    "timestamp": 1770203180538,
+    "items": [
+      {
+        "itemId": "SmallRock",
+        "stock": 3
+      },
+      {
+        "itemId": "MediumRock",
+        "stock": 3
+      },
+      {
+        "itemId": "WoodBench",
+        "stock": 2
+      },
+      {
+        "itemId": "WoodArch",
+        "stock": 2
+      },
+      {
+        "itemId": "WoodPergola",
+        "stock": 2
+      },
+      {
+        "itemId": "StoneBench",
+        "stock": 2
+      },
+      {
+        "itemId": "StoneArch",
+        "stock": 2
+      },
+      {
+        "itemId": "StoneBridge",
+        "stock": 2
+      },
+      {
+        "itemId": "StoneLampPost",
+        "stock": 1
+      },
+      {
+        "itemId": "MarbleArch",
+        "stock": 1
+      },
+      {
+        "itemId": "MarbleBridge",
+        "stock": 1
+      },
+      {
+        "itemId": "PetHutch",
+        "stock": 1
+      },
+      {
+        "itemId": "DecorShed",
+        "stock": 1
+      },
+      {
+        "itemId": "SeedSilo",
+        "stock": 1
+      }
+    ],
+    "reason": "timer"
+  },
+  {
+    "shopType": "egg",
+    "timestamp": 1770203180538,
+    "items": [
+      {
+        "itemId": "CommonEgg",
+        "stock": 1
+      },
+      {
+        "itemId": "UncommonEgg",
+        "stock": 1
+      },
+      {
+        "itemId": "RareEgg",
+        "stock": 1
+      }
+    ],
+    "reason": "timer"
+  },
+  {
+    "shopType": "seed",
+    "timestamp": 1770203180538,
+    "items": [
+      {
+        "itemId": "Carrot",
+        "stock": 7
+      },
+      {
+        "itemId": "Cabbage",
+        "stock": 3
+      },
+      {
+        "itemId": "Strawberry",
+        "stock": 5
+      },
+      {
+        "itemId": "Aloe",
+        "stock": 10
+      },
+      {
+        "itemId": "Beet",
+        "stock": 5
+      },
+      {
+        "itemId": "Blueberry",
+        "stock": 3
+      },
+      {
+        "itemId": "Apple",
+        "stock": 1
+      },
+      {
+        "itemId": "OrangeTulip",
+        "stock": 12
+      },
+      {
+        "itemId": "Tomato",
+        "stock": 3
+      },
+      {
+        "itemId": "Pear",
+        "stock": 1
+      }
+    ],
+    "reason": "timer"
+  },
+  {
+    "shopType": "decor",
     "timestamp": 1770200617740,
     "items": [
       {
