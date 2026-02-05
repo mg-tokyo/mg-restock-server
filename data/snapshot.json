@@ -1,46 +1,38 @@
 {
   "seed": {
-    "secondsUntilRestock": 64,
-    "lastRestockAt": 1770297836973,
+    "secondsUntilRestock": 49,
+    "lastRestockAt": 1770300852044,
     "items": [
       {
         "name": "Carrot",
-        "stock": 24
+        "stock": 14
       },
       {
         "name": "Cabbage",
-        "stock": 3
-      },
-      {
-        "name": "Strawberry",
         "stock": 2
       },
       {
+        "name": "Strawberry",
+        "stock": 1
+      },
+      {
         "name": "Aloe",
-        "stock": 8
+        "stock": 3
       },
       {
         "name": "Beet",
-        "stock": 9
+        "stock": 5
       },
       {
         "name": "FavaBean",
         "stock": 2
       },
       {
-        "name": "Blueberry",
-        "stock": 2
-      },
-      {
         "name": "Tomato",
-        "stock": 1
-      },
-      {
-        "name": "Echeveria",
         "stock": 2
       },
       {
-        "name": "Camellia",
+        "name": "Banana",
         "stock": 1
       },
       {
@@ -50,18 +42,22 @@
     ]
   },
   "egg": {
-    "secondsUntilRestock": 364,
-    "lastRestockAt": 1770297836973,
+    "secondsUntilRestock": 49,
+    "lastRestockAt": 1770300852044,
     "items": [
       {
         "name": "CommonEgg",
+        "stock": 2
+      },
+      {
+        "name": "RareEgg",
         "stock": 1
       }
     ]
   },
   "decor": {
-    "secondsUntilRestock": 2164,
-    "lastRestockAt": 1770297836973,
+    "secondsUntilRestock": 2749,
+    "lastRestockAt": 1770300852044,
     "items": [
       {
         "name": "SmallRock",
@@ -96,10 +92,6 @@
         "stock": 1
       },
       {
-        "name": "WoodBirdhouse",
-        "stock": 1
-      },
-      {
         "name": "StoneBench",
         "stock": 2
       },
@@ -108,15 +100,7 @@
         "stock": 2
       },
       {
-        "name": "StoneBirdbath",
-        "stock": 1
-      },
-      {
-        "name": "MarbleBench",
-        "stock": 1
-      },
-      {
-        "name": "MarbleLampPost",
+        "name": "StoneLampPost",
         "stock": 1
       },
       {
