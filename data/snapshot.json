@@ -1,15 +1,15 @@
 {
   "seed": {
-    "secondsUntilRestock": 142,
-    "lastRestockAt": 1770374558666,
+    "secondsUntilRestock": 184,
+    "lastRestockAt": 1770376916936,
     "items": [
       {
         "name": "Carrot",
-        "stock": 23
+        "stock": 20
       },
       {
         "name": "Cabbage",
-        "stock": 3
+        "stock": 2
       },
       {
         "name": "Strawberry",
@@ -21,34 +21,26 @@
       },
       {
         "name": "Beet",
-        "stock": 10
+        "stock": 9
       },
       {
         "name": "FavaBean",
-        "stock": 3
+        "stock": 4
       },
       {
         "name": "Blueberry",
-        "stock": 3
+        "stock": 2
       },
       {
         "name": "Tomato",
         "stock": 1
       },
       {
-        "name": "Daffodil",
+        "name": "Echeveria",
         "stock": 2
       },
       {
-        "name": "Echeveria",
-        "stock": 1
-      },
-      {
         "name": "Lily",
-        "stock": 1
-      },
-      {
-        "name": "Camellia",
         "stock": 1
       },
       {
@@ -56,39 +48,43 @@
         "stock": 2
       },
       {
-        "name": "DragonFruit",
-        "stock": 1
+        "name": "Mushroom",
+        "stock": 22
+      },
+      {
+        "name": "Cactus",
+        "stock": 5
       }
     ]
   },
   "egg": {
-    "secondsUntilRestock": 142,
-    "lastRestockAt": 1770374558666,
+    "secondsUntilRestock": 484,
+    "lastRestockAt": 1770376916936,
     "items": [
       {
         "name": "CommonEgg",
-        "stock": 2
-      },
-      {
-        "name": "RareEgg",
-        "stock": 1
+        "stock": 3
       }
     ]
   },
   "decor": {
-    "secondsUntilRestock": 1042,
-    "lastRestockAt": 1770374558666,
+    "secondsUntilRestock": 2284,
+    "lastRestockAt": 1770376916936,
     "items": [
       {
         "name": "SmallRock",
-        "stock": 3
+        "stock": 5
       },
       {
         "name": "MediumRock",
-        "stock": 2
+        "stock": 3
       },
       {
         "name": "HayBale",
+        "stock": 1
+      },
+      {
+        "name": "StringLights",
         "stock": 2
       },
       {
@@ -100,8 +96,8 @@
         "stock": 2
       },
       {
-        "name": "WoodLampPost",
-        "stock": 1
+        "name": "WoodPergola",
+        "stock": 2
       },
       {
         "name": "StoneBench",
@@ -112,11 +108,7 @@
         "stock": 2
       },
       {
-        "name": "StoneBridge",
-        "stock": 2
-      },
-      {
-        "name": "MarbleArch",
+        "name": "StoneBirdbath",
         "stock": 1
       },
       {
