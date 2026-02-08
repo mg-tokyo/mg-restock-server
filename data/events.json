@@ -1,5 +1,122 @@
 [
   {
+    "shopType": "decor",
+    "timestamp": 1770582779504,
+    "items": [
+      {
+        "itemId": "SmallRock",
+        "stock": 4
+      },
+      {
+        "itemId": "MediumRock",
+        "stock": 2
+      },
+      {
+        "itemId": "HayBale",
+        "stock": 2
+      },
+      {
+        "itemId": "WoodBench",
+        "stock": 2
+      },
+      {
+        "itemId": "WoodArch",
+        "stock": 2
+      },
+      {
+        "itemId": "StoneBench",
+        "stock": 2
+      },
+      {
+        "itemId": "StoneArch",
+        "stock": 2
+      },
+      {
+        "itemId": "PetHutch",
+        "stock": 1
+      },
+      {
+        "itemId": "DecorShed",
+        "stock": 1
+      },
+      {
+        "itemId": "SeedSilo",
+        "stock": 1
+      }
+    ],
+    "reason": "timer"
+  },
+  {
+    "shopType": "egg",
+    "timestamp": 1770582779504,
+    "items": [
+      {
+        "itemId": "CommonEgg",
+        "stock": 3
+      }
+    ],
+    "reason": "timer"
+  },
+  {
+    "shopType": "seed",
+    "timestamp": 1770582779504,
+    "items": [
+      {
+        "itemId": "Carrot",
+        "stock": 19
+      },
+      {
+        "itemId": "Cabbage",
+        "stock": 3
+      },
+      {
+        "itemId": "Strawberry",
+        "stock": 3
+      },
+      {
+        "itemId": "Aloe",
+        "stock": 4
+      },
+      {
+        "itemId": "Beet",
+        "stock": 9
+      },
+      {
+        "itemId": "FavaBean",
+        "stock": 2
+      },
+      {
+        "itemId": "Blueberry",
+        "stock": 1
+      },
+      {
+        "itemId": "Apple",
+        "stock": 1
+      },
+      {
+        "itemId": "OrangeTulip",
+        "stock": 6
+      },
+      {
+        "itemId": "Tomato",
+        "stock": 2
+      },
+      {
+        "itemId": "Lily",
+        "stock": 1
+      },
+      {
+        "itemId": "Camellia",
+        "stock": 1
+      },
+      {
+        "itemId": "BurrosTail",
+        "stock": 3
+      }
+    ],
+    "reason": "items"
+  },
+  {
     "shopType": "egg",
     "timestamp": 1770580586120,
     "items": [
