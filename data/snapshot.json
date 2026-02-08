@@ -1,11 +1,11 @@
 {
   "seed": {
-    "secondsUntilRestock": 105,
-    "lastRestockAt": 1770540796608,
+    "secondsUntilRestock": 245,
+    "lastRestockAt": 1770542756393,
     "items": [
       {
         "name": "Carrot",
-        "stock": 9
+        "stock": 11
       },
       {
         "name": "Cabbage",
@@ -13,46 +13,26 @@
       },
       {
         "name": "Strawberry",
-        "stock": 4
+        "stock": 1
       },
       {
         "name": "Aloe",
-        "stock": 5
+        "stock": 9
       },
       {
         "name": "Beet",
-        "stock": 7
+        "stock": 8
       },
       {
         "name": "FavaBean",
-        "stock": 2
-      },
-      {
-        "name": "Blueberry",
         "stock": 4
       },
       {
-        "name": "OrangeTulip",
-        "stock": 19
-      },
-      {
-        "name": "Tomato",
-        "stock": 2
-      },
-      {
-        "name": "Echeveria",
-        "stock": 1
-      },
-      {
-        "name": "Banana",
-        "stock": 1
+        "name": "Blueberry",
+        "stock": 5
       },
       {
         "name": "Lily",
-        "stock": 2
-      },
-      {
-        "name": "Camellia",
         "stock": 1
       },
       {
@@ -62,26 +42,30 @@
     ]
   },
   "egg": {
-    "secondsUntilRestock": 405,
-    "lastRestockAt": 1770538642020,
+    "secondsUntilRestock": 245,
+    "lastRestockAt": 1770542756393,
     "items": [
       {
         "name": "CommonEgg",
-        "stock": 3
+        "stock": 2
+      },
+      {
+        "name": "UncommonEgg",
+        "stock": 1
       }
     ]
   },
   "decor": {
-    "secondsUntilRestock": 405,
-    "lastRestockAt": 1770538642020,
+    "secondsUntilRestock": 2045,
+    "lastRestockAt": 1770542756393,
     "items": [
       {
         "name": "SmallRock",
-        "stock": 5
+        "stock": 4
       },
       {
         "name": "MediumRock",
-        "stock": 2
+        "stock": 3
       },
       {
         "name": "HayBale",
@@ -113,10 +97,6 @@
       },
       {
         "name": "StoneLampPost",
-        "stock": 1
-      },
-      {
-        "name": "StoneGnome",
         "stock": 1
       },
       {
