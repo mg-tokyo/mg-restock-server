@@ -1,11 +1,11 @@
 {
   "seed": {
-    "secondsUntilRestock": 170,
-    "lastRestockAt": 1770884831024,
+    "secondsUntilRestock": 200,
+    "lastRestockAt": 1770888401582,
     "items": [
       {
         "name": "Carrot",
-        "stock": 15
+        "stock": 17
       },
       {
         "name": "Cabbage",
@@ -17,55 +17,51 @@
       },
       {
         "name": "Aloe",
-        "stock": 10
+        "stock": 8
       },
       {
         "name": "Beet",
-        "stock": 9
+        "stock": 6
       },
       {
         "name": "FavaBean",
-        "stock": 4
+        "stock": 5
       },
       {
         "name": "Blueberry",
-        "stock": 1
-      },
-      {
-        "name": "Apple",
-        "stock": 1
+        "stock": 5
       },
       {
         "name": "Tomato",
-        "stock": 1
+        "stock": 3
       },
       {
-        "name": "Camellia",
-        "stock": 1
+        "name": "Echeveria",
+        "stock": 2
       }
     ]
   },
   "egg": {
-    "secondsUntilRestock": 170,
-    "lastRestockAt": 1770884831024,
+    "secondsUntilRestock": 200,
+    "lastRestockAt": 1770888401582,
     "items": [
       {
         "name": "CommonEgg",
-        "stock": 3
+        "stock": 2
       },
       {
-        "name": "SnowEgg",
+        "name": "RareEgg",
         "stock": 1
       }
     ]
   },
   "decor": {
-    "secondsUntilRestock": 1970,
-    "lastRestockAt": 1770884831024,
+    "secondsUntilRestock": 2000,
+    "lastRestockAt": 1770888401582,
     "items": [
       {
         "name": "SmallRock",
-        "stock": 4
+        "stock": 3
       },
       {
         "name": "MediumRock",
@@ -73,7 +69,7 @@
       },
       {
         "name": "HayBale",
-        "stock": 2
+        "stock": 1
       },
       {
         "name": "StringLights",
@@ -88,10 +84,6 @@
         "stock": 2
       },
       {
-        "name": "WoodBridge",
-        "stock": 2
-      },
-      {
         "name": "StoneBench",
         "stock": 2
       },
@@ -101,10 +93,6 @@
       },
       {
         "name": "MarbleBench",
-        "stock": 1
-      },
-      {
-        "name": "MarbleBridge",
         "stock": 1
       },
       {
