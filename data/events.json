@@ -1,6 +1,68 @@
 [
   {
     "shopType": "egg",
+    "timestamp": 1771192638994,
+    "items": [
+      {
+        "itemId": "CommonEgg",
+        "stock": 1
+      }
+    ],
+    "reason": "items"
+  },
+  {
+    "shopType": "seed",
+    "timestamp": 1771192638994,
+    "items": [
+      {
+        "itemId": "Carrot",
+        "stock": 11
+      },
+      {
+        "itemId": "Cabbage",
+        "stock": 3
+      },
+      {
+        "itemId": "Strawberry",
+        "stock": 1
+      },
+      {
+        "itemId": "Aloe",
+        "stock": 5
+      },
+      {
+        "itemId": "Beet",
+        "stock": 8
+      },
+      {
+        "itemId": "Blueberry",
+        "stock": 1
+      },
+      {
+        "itemId": "OrangeTulip",
+        "stock": 15
+      },
+      {
+        "itemId": "Tomato",
+        "stock": 3
+      },
+      {
+        "itemId": "Daffodil",
+        "stock": 4
+      },
+      {
+        "itemId": "Lily",
+        "stock": 1
+      },
+      {
+        "itemId": "Cactus",
+        "stock": 6
+      }
+    ],
+    "reason": "items"
+  },
+  {
+    "shopType": "egg",
     "timestamp": 1771191681260,
     "items": [
       {
