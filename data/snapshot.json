@@ -1,11 +1,11 @@
 {
   "seed": {
-    "secondsUntilRestock": 187,
-    "lastRestockAt": 1771194714329,
+    "secondsUntilRestock": 229,
+    "lastRestockAt": 1771196172200,
     "items": [
       {
         "name": "Carrot",
-        "stock": 13
+        "stock": 17
       },
       {
         "name": "Cabbage",
@@ -13,74 +13,66 @@
       },
       {
         "name": "Strawberry",
-        "stock": 4
-      },
-      {
-        "name": "Aloe",
-        "stock": 6
-      },
-      {
-        "name": "Beet",
-        "stock": 9
-      },
-      {
-        "name": "FavaBean",
-        "stock": 2
-      },
-      {
-        "name": "Apple",
-        "stock": 2
-      },
-      {
-        "name": "Tomato",
-        "stock": 3
-      },
-      {
-        "name": "Echeveria",
-        "stock": 2
-      },
-      {
-        "name": "Lily",
-        "stock": 3
-      },
-      {
-        "name": "Camellia",
         "stock": 1
       },
       {
-        "name": "BurrosTail",
+        "name": "Aloe",
+        "stock": 10
+      },
+      {
+        "name": "Beet",
+        "stock": 7
+      },
+      {
+        "name": "Rose",
+        "stock": 1
+      },
+      {
+        "name": "FavaBean",
+        "stock": 4
+      },
+      {
+        "name": "Apple",
+        "stock": 1
+      },
+      {
+        "name": "OrangeTulip",
+        "stock": 13
+      },
+      {
+        "name": "Tomato",
+        "stock": 1
+      },
+      {
+        "name": "Pear",
+        "stock": 2
+      },
+      {
+        "name": "Banana",
         "stock": 3
       },
       {
-        "name": "VioletCort",
+        "name": "Lily",
         "stock": 3
       }
     ]
   },
   "egg": {
-    "secondsUntilRestock": 787,
-    "lastRestockAt": 1771194714329,
+    "secondsUntilRestock": 229,
+    "lastRestockAt": 1771196172200,
     "items": [
       {
         "name": "CommonEgg",
-        "stock": 1
+        "stock": 3
       },
       {
-        "name": "UncommonEgg",
-        "stock": 1
-      },
-      {
-        "name": "LegendaryEgg",
-        "stock": 1
-      },
-      {
-        "name": "SnowEgg",
+        "name": "RareEgg",
         "stock": 1
       }
     ]
   },
   "decor": {
-    "secondsUntilRestock": 1687,
+    "secondsUntilRestock": 229,
     "lastRestockAt": 1771194714329,
     "items": [
       {
