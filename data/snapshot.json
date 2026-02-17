@@ -1,15 +1,15 @@
 {
   "seed": {
-    "secondsUntilRestock": 232,
-    "lastRestockAt": 1771323968997,
+    "secondsUntilRestock": 92,
+    "lastRestockAt": 1771326809774,
     "items": [
       {
         "name": "Carrot",
-        "stock": 13
+        "stock": 20
       },
       {
         "name": "Cabbage",
-        "stock": 2
+        "stock": 3
       },
       {
         "name": "Strawberry",
@@ -17,41 +17,41 @@
       },
       {
         "name": "Aloe",
-        "stock": 6
+        "stock": 9
       },
       {
         "name": "Beet",
-        "stock": 10
+        "stock": 7
       },
       {
         "name": "Blueberry",
-        "stock": 3
+        "stock": 4
+      },
+      {
+        "name": "Apple",
+        "stock": 2
       },
       {
         "name": "Tomato",
-        "stock": 2
-      },
-      {
-        "name": "Echeveria",
-        "stock": 2
-      },
-      {
-        "name": "Banana",
         "stock": 1
       },
       {
-        "name": "Camellia",
+        "name": "Corn",
+        "stock": 6
+      },
+      {
+        "name": "Lily",
         "stock": 1
       }
     ]
   },
   "egg": {
-    "secondsUntilRestock": 232,
-    "lastRestockAt": 1771323968997,
+    "secondsUntilRestock": 92,
+    "lastRestockAt": 1771326809774,
     "items": [
       {
         "name": "CommonEgg",
-        "stock": 1
+        "stock": 3
       },
       {
         "name": "RareEgg",
@@ -60,8 +60,8 @@
     ]
   },
   "decor": {
-    "secondsUntilRestock": 2032,
-    "lastRestockAt": 1771323968997,
+    "secondsUntilRestock": 2792,
+    "lastRestockAt": 1771326809774,
     "items": [
       {
         "name": "SmallRock",
@@ -69,14 +69,6 @@
       },
       {
         "name": "MediumRock",
-        "stock": 2
-      },
-      {
-        "name": "HayBale",
-        "stock": 2
-      },
-      {
-        "name": "StringLights",
         "stock": 2
       },
       {
@@ -102,10 +94,6 @@
       {
         "name": "StoneArch",
         "stock": 2
-      },
-      {
-        "name": "MarbleBench",
-        "stock": 1
       },
       {
         "name": "PetHutch",
