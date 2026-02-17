@@ -1,95 +1,79 @@
 {
   "seed": {
-    "secondsUntilRestock": 85,
-    "lastRestockAt": 1771303716428,
+    "secondsUntilRestock": 43,
+    "lastRestockAt": 1771307358557,
     "items": [
       {
         "name": "Carrot",
-        "stock": 20
+        "stock": 18
       },
       {
         "name": "Cabbage",
-        "stock": 2
-      },
-      {
-        "name": "Strawberry",
-        "stock": 2
-      },
-      {
-        "name": "Aloe",
         "stock": 3
       },
       {
-        "name": "Beet",
-        "stock": 5
+        "name": "Strawberry",
+        "stock": 3
       },
       {
-        "name": "Rose",
-        "stock": 1
+        "name": "Aloe",
+        "stock": 8
+      },
+      {
+        "name": "Beet",
+        "stock": 7
       },
       {
         "name": "FavaBean",
-        "stock": 2
-      },
-      {
-        "name": "Blueberry",
-        "stock": 2
-      },
-      {
-        "name": "Apple",
-        "stock": 1
+        "stock": 5
       },
       {
         "name": "Tomato",
         "stock": 3
       },
       {
-        "name": "Watermelon",
-        "stock": 5
-      },
-      {
         "name": "Echeveria",
         "stock": 2
       },
       {
-        "name": "Gentian",
+        "name": "Pear",
+        "stock": 2
+      },
+      {
+        "name": "BurrosTail",
+        "stock": 3
+      },
+      {
+        "name": "Mushroom",
+        "stock": 17
+      },
+      {
+        "name": "Chrysanthemum",
         "stock": 1
-      },
-      {
-        "name": "Lily",
-        "stock": 1
-      },
-      {
-        "name": "Camellia",
-        "stock": 1
-      },
-      {
-        "name": "Cactus",
-        "stock": 6
-      },
-      {
-        "name": "VioletCort",
-        "stock": 4
       }
     ]
   },
   "egg": {
-    "secondsUntilRestock": 685,
-    "lastRestockAt": 1771303716428,
+    "secondsUntilRestock": 643,
+    "lastRestockAt": 1771307358557,
     "items": [
       {
         "name": "CommonEgg",
         "stock": 2
       },
       {
-        "name": "RareEgg",
+        "name": "UncommonEgg",
+        "stock": 1
+      },
+      {
+        "name": "LegendaryEgg",
         "stock": 1
       }
     ]
   },
   "decor": {
-    "secondsUntilRestock": 685,
-    "lastRestockAt": 1771303716428,
+    "secondsUntilRestock": 643,
+    "lastRestockAt": 1771307358557,
     "items": [
       {
         "name": "SmallRock",
@@ -98,6 +82,10 @@
       {
         "name": "MediumRock",
         "stock": 2
+      },
+      {
+        "name": "HayBale",
+        "stock": 1
       },
       {
         "name": "StringLights",
@@ -112,8 +100,8 @@
         "stock": 2
       },
       {
-        "name": "WoodPergola",
-        "stock": 2
+        "name": "WoodLampPost",
+        "stock": 1
       },
       {
         "name": "StoneBench",
@@ -128,7 +116,7 @@
         "stock": 1
       },
       {
-        "name": "MarbleBlobling",
+        "name": "MarbleLampPost",
         "stock": 1
       },
       {
