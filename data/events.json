@@ -1,5 +1,138 @@
 [
   {
+    "shopType": "decor",
+    "timestamp": 1771604524889,
+    "items": [
+      {
+        "itemId": "SmallRock",
+        "stock": 4
+      },
+      {
+        "itemId": "MediumRock",
+        "stock": 3
+      },
+      {
+        "itemId": "HayBale",
+        "stock": 2
+      },
+      {
+        "itemId": "StringLights",
+        "stock": 2
+      },
+      {
+        "itemId": "WoodBench",
+        "stock": 2
+      },
+      {
+        "itemId": "WoodArch",
+        "stock": 2
+      },
+      {
+        "itemId": "WoodBridge",
+        "stock": 2
+      },
+      {
+        "itemId": "StoneBench",
+        "stock": 2
+      },
+      {
+        "itemId": "StoneArch",
+        "stock": 2
+      },
+      {
+        "itemId": "MarbleArch",
+        "stock": 1
+      },
+      {
+        "itemId": "PetHutch",
+        "stock": 1
+      },
+      {
+        "itemId": "DecorShed",
+        "stock": 1
+      },
+      {
+        "itemId": "SeedSilo",
+        "stock": 1
+      }
+    ],
+    "reason": "timer"
+  },
+  {
+    "shopType": "egg",
+    "timestamp": 1771604524889,
+    "items": [
+      {
+        "itemId": "CommonEgg",
+        "stock": 2
+      },
+      {
+        "itemId": "UncommonEgg",
+        "stock": 1
+      },
+      {
+        "itemId": "RareEgg",
+        "stock": 1
+      }
+    ],
+    "reason": "items"
+  },
+  {
+    "shopType": "seed",
+    "timestamp": 1771604524889,
+    "items": [
+      {
+        "itemId": "Carrot",
+        "stock": 6
+      },
+      {
+        "itemId": "Cabbage",
+        "stock": 3
+      },
+      {
+        "itemId": "Strawberry",
+        "stock": 2
+      },
+      {
+        "itemId": "Aloe",
+        "stock": 7
+      },
+      {
+        "itemId": "Beet",
+        "stock": 8
+      },
+      {
+        "itemId": "FavaBean",
+        "stock": 3
+      },
+      {
+        "itemId": "Blueberry",
+        "stock": 4
+      },
+      {
+        "itemId": "OrangeTulip",
+        "stock": 25
+      },
+      {
+        "itemId": "Tomato",
+        "stock": 2
+      },
+      {
+        "itemId": "Echeveria",
+        "stock": 1
+      },
+      {
+        "itemId": "Lily",
+        "stock": 1
+      },
+      {
+        "itemId": "Cactus",
+        "stock": 9
+      }
+    ],
+    "reason": "timer"
+  },
+  {
     "shopType": "egg",
     "timestamp": 1771602490861,
     "items": [
