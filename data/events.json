@@ -1,6 +1,127 @@
 [
   {
     "shopType": "decor",
+    "timestamp": 1771845868133,
+    "items": [
+      {
+        "itemId": "SmallRock",
+        "stock": 3
+      },
+      {
+        "itemId": "MediumRock",
+        "stock": 2
+      },
+      {
+        "itemId": "StringLights",
+        "stock": 2
+      },
+      {
+        "itemId": "WoodBench",
+        "stock": 2
+      },
+      {
+        "itemId": "WoodArch",
+        "stock": 2
+      },
+      {
+        "itemId": "WoodLampPost",
+        "stock": 1
+      },
+      {
+        "itemId": "StoneBench",
+        "stock": 2
+      },
+      {
+        "itemId": "StoneArch",
+        "stock": 2
+      },
+      {
+        "itemId": "MarbleBridge",
+        "stock": 1
+      },
+      {
+        "itemId": "PetHutch",
+        "stock": 1
+      },
+      {
+        "itemId": "DecorShed",
+        "stock": 1
+      },
+      {
+        "itemId": "SeedSilo",
+        "stock": 1
+      }
+    ],
+    "reason": "timer"
+  },
+  {
+    "shopType": "egg",
+    "timestamp": 1771845868133,
+    "items": [
+      {
+        "itemId": "CommonEgg",
+        "stock": 2
+      },
+      {
+        "itemId": "RareEgg",
+        "stock": 1
+      }
+    ],
+    "reason": "items"
+  },
+  {
+    "shopType": "seed",
+    "timestamp": 1771845868133,
+    "items": [
+      {
+        "itemId": "Carrot",
+        "stock": 9
+      },
+      {
+        "itemId": "Cabbage",
+        "stock": 3
+      },
+      {
+        "itemId": "Strawberry",
+        "stock": 4
+      },
+      {
+        "itemId": "Aloe",
+        "stock": 4
+      },
+      {
+        "itemId": "Beet",
+        "stock": 6
+      },
+      {
+        "itemId": "FavaBean",
+        "stock": 3
+      },
+      {
+        "itemId": "Blueberry",
+        "stock": 4
+      },
+      {
+        "itemId": "Daffodil",
+        "stock": 3
+      },
+      {
+        "itemId": "Coconut",
+        "stock": 2
+      },
+      {
+        "itemId": "Banana",
+        "stock": 1
+      },
+      {
+        "itemId": "BurrosTail",
+        "stock": 3
+      }
+    ],
+    "reason": "items"
+  },
+  {
+    "shopType": "decor",
     "timestamp": 1771842701493,
     "items": [
       {
