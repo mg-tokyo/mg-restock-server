@@ -1,6 +1,123 @@
 [
   {
     "shopType": "decor",
+    "timestamp": 1772044713828,
+    "items": [
+      {
+        "itemId": "SmallRock",
+        "stock": 3
+      },
+      {
+        "itemId": "MediumRock",
+        "stock": 3
+      },
+      {
+        "itemId": "StringLights",
+        "stock": 2
+      },
+      {
+        "itemId": "WoodBench",
+        "stock": 2
+      },
+      {
+        "itemId": "WoodArch",
+        "stock": 2
+      },
+      {
+        "itemId": "WoodLampPost",
+        "stock": 1
+      },
+      {
+        "itemId": "StoneBench",
+        "stock": 2
+      },
+      {
+        "itemId": "StoneArch",
+        "stock": 2
+      },
+      {
+        "itemId": "MarbleBlobling",
+        "stock": 1
+      },
+      {
+        "itemId": "DecorShed",
+        "stock": 1
+      },
+      {
+        "itemId": "PetHutch",
+        "stock": 1
+      },
+      {
+        "itemId": "SeedSilo",
+        "stock": 1
+      }
+    ],
+    "reason": "items"
+  },
+  {
+    "shopType": "egg",
+    "timestamp": 1772044713828,
+    "items": [
+      {
+        "itemId": "CommonEgg",
+        "stock": 3
+      }
+    ],
+    "reason": "items"
+  },
+  {
+    "shopType": "seed",
+    "timestamp": 1772044713828,
+    "items": [
+      {
+        "itemId": "Carrot",
+        "stock": 7
+      },
+      {
+        "itemId": "Cabbage",
+        "stock": 2
+      },
+      {
+        "itemId": "Strawberry",
+        "stock": 6
+      },
+      {
+        "itemId": "Aloe",
+        "stock": 10
+      },
+      {
+        "itemId": "Beet",
+        "stock": 5
+      },
+      {
+        "itemId": "FavaBean",
+        "stock": 4
+      },
+      {
+        "itemId": "Blueberry",
+        "stock": 5
+      },
+      {
+        "itemId": "Tomato",
+        "stock": 2
+      },
+      {
+        "itemId": "Pumpkin",
+        "stock": 4
+      },
+      {
+        "itemId": "Gentian",
+        "stock": 1
+      },
+      {
+        "itemId": "Lily",
+        "stock": 2
+      }
+    ],
+    "reason": "items"
+  },
+  {
+    "shopType": "decor",
     "timestamp": 1772040751686,
     "items": [
       {
