@@ -1,5 +1,75 @@
 [
   {
+    "shopType": "egg",
+    "timestamp": 1772139126640,
+    "items": [
+      {
+        "itemId": "CommonEgg",
+        "stock": 1
+      },
+      {
+        "itemId": "UncommonEgg",
+        "stock": 1
+      }
+    ],
+    "reason": "items"
+  },
+  {
+    "shopType": "seed",
+    "timestamp": 1772139126640,
+    "items": [
+      {
+        "itemId": "Carrot",
+        "stock": 17
+      },
+      {
+        "itemId": "Cabbage",
+        "stock": 2
+      },
+      {
+        "itemId": "Strawberry",
+        "stock": 4
+      },
+      {
+        "itemId": "Aloe",
+        "stock": 4
+      },
+      {
+        "itemId": "Beet",
+        "stock": 7
+      },
+      {
+        "itemId": "FavaBean",
+        "stock": 5
+      },
+      {
+        "itemId": "Blueberry",
+        "stock": 5
+      },
+      {
+        "itemId": "Apple",
+        "stock": 2
+      },
+      {
+        "itemId": "Tomato",
+        "stock": 3
+      },
+      {
+        "itemId": "Daffodil",
+        "stock": 1
+      },
+      {
+        "itemId": "Echeveria",
+        "stock": 1
+      },
+      {
+        "itemId": "Lily",
+        "stock": 1
+      }
+    ],
+    "reason": "timer"
+  },
+  {
     "shopType": "decor",
     "timestamp": 1772136205239,
     "items": [
