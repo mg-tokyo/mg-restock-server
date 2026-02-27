@@ -1,11 +1,11 @@
 {
   "seed": {
-    "secondsUntilRestock": 247,
-    "lastRestockAt": 1772228754238,
+    "secondsUntilRestock": 273,
+    "lastRestockAt": 1772229628529,
     "items": [
       {
         "name": "Carrot",
-        "stock": 16
+        "stock": 25
       },
       {
         "name": "Cabbage",
@@ -13,79 +13,63 @@
       },
       {
         "name": "Strawberry",
-        "stock": 5
+        "stock": 3
       },
       {
         "name": "Aloe",
-        "stock": 3
+        "stock": 7
       },
       {
         "name": "Beet",
-        "stock": 8
-      },
-      {
-        "name": "Blueberry",
-        "stock": 4
+        "stock": 7
       },
       {
         "name": "Apple",
-        "stock": 1
+        "stock": 2
       },
       {
         "name": "Tomato",
-        "stock": 1
-      },
-      {
-        "name": "Echeveria",
-        "stock": 2
-      },
-      {
-        "name": "Gentian",
-        "stock": 1
-      },
-      {
-        "name": "Coconut",
-        "stock": 2
-      },
-      {
-        "name": "Lily",
-        "stock": 1
-      },
-      {
-        "name": "Peach",
-        "stock": 1
-      },
-      {
-        "name": "BurrosTail",
         "stock": 3
       },
       {
-        "name": "Cacao",
+        "name": "Lily",
+        "stock": 2
+      },
+      {
+        "name": "Camellia",
         "stock": 1
       },
       {
-        "name": "Sunflower",
-        "stock": 2
+        "name": "Bamboo",
+        "stock": 6
       }
     ]
   },
   "egg": {
-    "secondsUntilRestock": 847,
-    "lastRestockAt": 1772228754238,
+    "secondsUntilRestock": 873,
+    "lastRestockAt": 1772229628529,
     "items": [
       {
         "name": "CommonEgg",
+        "stock": 2
+      },
+      {
+        "name": "UncommonEgg",
+        "stock": 1
+      },
+      {
+        "name": "RareEgg",
         "stock": 1
       }
     ]
   },
   "decor": {
-    "secondsUntilRestock": 847,
-    "lastRestockAt": 1772226871275,
+    "secondsUntilRestock": 3573,
+    "lastRestockAt": 1772229628529,
     "items": [
       {
         "name": "SmallRock",
-        "stock": 3
+        "stock": 4
       },
       {
         "name": "MediumRock",
@@ -104,20 +88,16 @@
         "stock": 2
       },
       {
+        "name": "WoodBirdhouse",
+        "stock": 1
+      },
+      {
         "name": "StoneBench",
         "stock": 2
       },
       {
         "name": "StoneArch",
         "stock": 2
-      },
-      {
-        "name": "StoneBridge",
-        "stock": 2
-      },
-      {
-        "name": "MarbleBench",
-        "stock": 1
       },
       {
         "name": "FeedingTrough",
