@@ -1,11 +1,11 @@
 {
   "seed": {
-    "secondsUntilRestock": 125,
-    "lastRestockAt": 1772355775347,
+    "secondsUntilRestock": 237,
+    "lastRestockAt": 1772358063950,
     "items": [
       {
         "name": "Carrot",
-        "stock": 13
+        "stock": 17
       },
       {
         "name": "Cabbage",
@@ -13,58 +13,82 @@
       },
       {
         "name": "Strawberry",
-        "stock": 4
+        "stock": 6
       },
       {
         "name": "Aloe",
-        "stock": 3
+        "stock": 9
       },
       {
         "name": "Beet",
-        "stock": 8
+        "stock": 10
       },
       {
         "name": "FavaBean",
-        "stock": 5
+        "stock": 2
+      },
+      {
+        "name": "Blueberry",
+        "stock": 3
       },
       {
         "name": "Apple",
-        "stock": 1
+        "stock": 2
       },
       {
         "name": "OrangeTulip",
-        "stock": 14
+        "stock": 23
       },
       {
-        "name": "Camellia",
+        "name": "Tomato",
         "stock": 1
       },
       {
-        "name": "Peach",
+        "name": "Daffodil",
+        "stock": 4
+      },
+      {
+        "name": "Echeveria",
+        "stock": 2
+      },
+      {
+        "name": "Pear",
         "stock": 1
+      },
+      {
+        "name": "Coconut",
+        "stock": 1
+      },
+      {
+        "name": "Lily",
+        "stock": 2
       },
       {
         "name": "BurrosTail",
-        "stock": 3
+        "stock": 2
       }
     ]
   },
   "egg": {
-    "secondsUntilRestock": 725,
-    "lastRestockAt": 1772355775347,
+    "secondsUntilRestock": 237,
+    "lastRestockAt": 1772358063950,
     "items": [
       {
         "name": "CommonEgg",
-        "stock": 3
+        "stock": 1
       },
       {
-        "name": "RareEgg",
+        "name": "UncommonEgg",
+        "stock": 1
+      },
+      {
+        "name": "LegendaryEgg",
         "stock": 1
       }
     ]
   },
   "decor": {
-    "secondsUntilRestock": 3425,
+    "secondsUntilRestock": 1137,
     "lastRestockAt": 1772355775347,
     "items": [
       {
