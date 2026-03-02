@@ -1,7 +1,7 @@
 {
   "seed": {
-    "secondsUntilRestock": 46,
-    "lastRestockAt": 1772472255320,
+    "secondsUntilRestock": 258,
+    "lastRestockAt": 1772473543474,
     "items": [
       {
         "name": "Carrot",
@@ -9,35 +9,35 @@
       },
       {
         "name": "Cabbage",
-        "stock": 3
+        "stock": 2
       },
       {
         "name": "Strawberry",
-        "stock": 3
+        "stock": 2
       },
       {
         "name": "Aloe",
-        "stock": 7
+        "stock": 8
       },
       {
         "name": "Beet",
-        "stock": 6
-      },
-      {
-        "name": "FavaBean",
-        "stock": 2
+        "stock": 7
       },
       {
         "name": "Blueberry",
-        "stock": 5
-      },
-      {
-        "name": "Apple",
-        "stock": 2
+        "stock": 4
       },
       {
         "name": "Tomato",
-        "stock": 2
+        "stock": 1
+      },
+      {
+        "name": "Corn",
+        "stock": 3
+      },
+      {
+        "name": "Watermelon",
+        "stock": 5
       },
       {
         "name": "Echeveria",
@@ -48,35 +48,47 @@
         "stock": 2
       },
       {
+        "name": "Banana",
+        "stock": 1
+      },
+      {
+        "name": "Lily",
+        "stock": 3
+      },
+      {
+        "name": "Camellia",
+        "stock": 1
+      },
+      {
         "name": "Peach",
         "stock": 1
       },
       {
         "name": "BurrosTail",
-        "stock": 3
+        "stock": 2
       },
       {
-        "name": "Cactus",
-        "stock": 12
+        "name": "Bamboo",
+        "stock": 9
       }
     ]
   },
   "egg": {
-    "secondsUntilRestock": 346,
-    "lastRestockAt": 1772472255320,
+    "secondsUntilRestock": 858,
+    "lastRestockAt": 1772473543474,
     "items": [
       {
         "name": "CommonEgg",
-        "stock": 1
+        "stock": 2
       },
       {
-        "name": "LegendaryEgg",
+        "name": "RareEgg",
         "stock": 1
       }
     ]
   },
   "decor": {
-    "secondsUntilRestock": 2146,
+    "secondsUntilRestock": 858,
     "lastRestockAt": 1772470829472,
     "items": [
       {
