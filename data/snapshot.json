@@ -1,11 +1,11 @@
 {
   "seed": {
-    "secondsUntilRestock": 22,
-    "lastRestockAt": 1772726378420,
+    "secondsUntilRestock": 51,
+    "lastRestockAt": 1772734449734,
     "items": [
       {
         "name": "Carrot",
-        "stock": 7
+        "stock": 11
       },
       {
         "name": "Cabbage",
@@ -17,15 +17,15 @@
       },
       {
         "name": "Aloe",
-        "stock": 6
+        "stock": 3
       },
       {
         "name": "Beet",
-        "stock": 6
+        "stock": 5
       },
       {
-        "name": "Blueberry",
-        "stock": 1
+        "name": "FavaBean",
+        "stock": 5
       },
       {
         "name": "Apple",
@@ -36,6 +36,10 @@
         "stock": 2
       },
       {
+        "name": "Corn",
+        "stock": 1
+      },
+      {
         "name": "Echeveria",
         "stock": 1
       },
@@ -44,18 +48,14 @@
         "stock": 3
       },
       {
-        "name": "BurrosTail",
-        "stock": 2
-      },
-      {
-        "name": "Lemon",
+        "name": "Camellia",
         "stock": 1
       }
     ]
   },
   "egg": {
-    "secondsUntilRestock": 22,
-    "lastRestockAt": 1772726378420,
+    "secondsUntilRestock": 51,
+    "lastRestockAt": 1772734449734,
     "items": [
       {
         "name": "CommonEgg",
@@ -64,12 +64,12 @@
     ]
   },
   "decor": {
-    "secondsUntilRestock": 22,
-    "lastRestockAt": 1772723752548,
+    "secondsUntilRestock": 2751,
+    "lastRestockAt": 1772734449734,
     "items": [
       {
         "name": "SmallRock",
-        "stock": 3
+        "stock": 5
       },
       {
         "name": "MediumRock",
@@ -96,8 +96,8 @@
         "stock": 2
       },
       {
-        "name": "WoodLampPost",
-        "stock": 1
+        "name": "WoodPergola",
+        "stock": 2
       },
       {
         "name": "StoneBench",
@@ -108,7 +108,11 @@
         "stock": 2
       },
       {
-        "name": "MarbleBridge",
+        "name": "StoneBridge",
+        "stock": 2
+      },
+      {
+        "name": "MarbleBench",
         "stock": 1
       },
       {
