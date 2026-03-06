@@ -486,11 +486,10 @@
   "egg:CommonEgg": {
     "itemId": "CommonEgg",
     "shopType": "egg",
-    "totalOccurrences": 1072,
+    "totalOccurrences": 1073,
     "firstSeen": 1770105624507,
-    "lastSeen": 1772825866104,
+    "lastSeen": 1772826752976,
     "recentTimestamps": [
-      1772758804628,
       1772761289866,
       1772764841271,
       1772768130015,
@@ -539,7 +538,8 @@
       1772821938928,
       1772823415788,
       1772824763456,
-      1772825866104
+      1772825866104,
+      1772826752976
     ]
   },
   "egg:UncommonEgg": {
