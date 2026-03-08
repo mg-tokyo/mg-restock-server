@@ -1,70 +1,86 @@
 {
   "seed": {
-    "secondsUntilRestock": 95,
-    "lastRestockAt": 1772972306180,
+    "secondsUntilRestock": 110,
+    "lastRestockAt": 1772973491119,
     "items": [
       {
         "name": "Carrot",
-        "stock": 14
+        "stock": 12
       },
       {
         "name": "Cabbage",
-        "stock": 2
+        "stock": 3
       },
       {
         "name": "Strawberry",
-        "stock": 4
-      },
-      {
-        "name": "Aloe",
-        "stock": 7
-      },
-      {
-        "name": "Beet",
-        "stock": 10
-      },
-      {
-        "name": "FavaBean",
         "stock": 5
       },
       {
+        "name": "Aloe",
+        "stock": 5
+      },
+      {
+        "name": "Beet",
+        "stock": 8
+      },
+      {
+        "name": "Blueberry",
+        "stock": 3
+      },
+      {
+        "name": "Apple",
+        "stock": 1
+      },
+      {
         "name": "OrangeTulip",
-        "stock": 23
+        "stock": 11
       },
       {
         "name": "Tomato",
         "stock": 1
       },
       {
-        "name": "Daffodil",
+        "name": "Echeveria",
         "stock": 2
       },
       {
-        "name": "Banana",
-        "stock": 3
+        "name": "Lily",
+        "stock": 1
       },
       {
-        "name": "Lily",
-        "stock": 3
+        "name": "Camellia",
+        "stock": 1
+      },
+      {
+        "name": "Peach",
+        "stock": 1
+      },
+      {
+        "name": "Bamboo",
+        "stock": 7
+      },
+      {
+        "name": "Cacao",
+        "stock": 1
       }
     ]
   },
   "egg": {
-    "secondsUntilRestock": 695,
-    "lastRestockAt": 1772972306180,
+    "secondsUntilRestock": 410,
+    "lastRestockAt": 1772973491119,
     "items": [
       {
         "name": "CommonEgg",
-        "stock": 1
+        "stock": 2
       },
       {
-        "name": "RareEgg",
+        "name": "UncommonEgg",
         "stock": 1
       }
     ]
   },
   "decor": {
-    "secondsUntilRestock": 2495,
+    "secondsUntilRestock": 1310,
     "lastRestockAt": 1772971296594,
     "items": [
       {
