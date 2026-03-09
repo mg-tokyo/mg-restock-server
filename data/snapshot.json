@@ -1,11 +1,11 @@
 {
   "seed": {
-    "secondsUntilRestock": 300,
-    "lastRestockAt": 1773071701284,
+    "secondsUntilRestock": 34,
+    "lastRestockAt": 1773073467886,
     "items": [
       {
         "name": "Carrot",
-        "stock": 19
+        "stock": 6
       },
       {
         "name": "Cabbage",
@@ -13,23 +13,35 @@
       },
       {
         "name": "Strawberry",
-        "stock": 2
+        "stock": 4
       },
       {
         "name": "Aloe",
-        "stock": 3
+        "stock": 7
       },
       {
         "name": "Beet",
         "stock": 6
       },
       {
+        "name": "FavaBean",
+        "stock": 3
+      },
+      {
         "name": "Blueberry",
-        "stock": 5
+        "stock": 3
+      },
+      {
+        "name": "Apple",
+        "stock": 2
       },
       {
         "name": "Tomato",
-        "stock": 3
+        "stock": 2
+      },
+      {
+        "name": "Daffodil",
+        "stock": 4
       },
       {
         "name": "Echeveria",
@@ -42,22 +54,26 @@
       {
         "name": "Camellia",
         "stock": 1
+      },
+      {
+        "name": "BurrosTail",
+        "stock": 2
       }
     ]
   },
   "egg": {
-    "secondsUntilRestock": 300,
-    "lastRestockAt": 1773071701284,
+    "secondsUntilRestock": 334,
+    "lastRestockAt": 1773073467886,
     "items": [
       {
         "name": "CommonEgg",
-        "stock": 3
+        "stock": 1
       }
     ]
   },
   "decor": {
-    "secondsUntilRestock": 300,
-    "lastRestockAt": 1773068563628,
+    "secondsUntilRestock": 2134,
+    "lastRestockAt": 1773073467886,
     "items": [
       {
         "name": "SmallRock",
@@ -69,7 +85,7 @@
       },
       {
         "name": "HayBale",
-        "stock": 2
+        "stock": 1
       },
       {
         "name": "WoodBench",
@@ -90,14 +106,6 @@
       {
         "name": "StoneArch",
         "stock": 2
-      },
-      {
-        "name": "MarbleBench",
-        "stock": 1
-      },
-      {
-        "name": "MarbleBlobling",
-        "stock": 1
       },
       {
         "name": "FeedingTrough",
