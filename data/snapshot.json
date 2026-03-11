@@ -1,11 +1,11 @@
 {
   "seed": {
-    "secondsUntilRestock": 253,
-    "lastRestockAt": 1773204948187,
+    "secondsUntilRestock": 263,
+    "lastRestockAt": 1773206737987,
     "items": [
       {
         "name": "Carrot",
-        "stock": 13
+        "stock": 25
       },
       {
         "name": "Cabbage",
@@ -13,15 +13,15 @@
       },
       {
         "name": "Strawberry",
-        "stock": 4
-      },
-      {
-        "name": "Aloe",
         "stock": 3
       },
       {
+        "name": "Aloe",
+        "stock": 6
+      },
+      {
         "name": "Beet",
-        "stock": 8
+        "stock": 10
       },
       {
         "name": "FavaBean",
@@ -29,43 +29,43 @@
       },
       {
         "name": "Blueberry",
-        "stock": 4
-      },
-      {
-        "name": "Apple",
-        "stock": 2
-      },
-      {
-        "name": "Peach",
         "stock": 1
       },
       {
-        "name": "BurrosTail",
+        "name": "OrangeTulip",
+        "stock": 11
+      },
+      {
+        "name": "Tomato",
         "stock": 3
+      },
+      {
+        "name": "Gentian",
+        "stock": 1
+      },
+      {
+        "name": "Banana",
+        "stock": 1
+      },
+      {
+        "name": "Cactus",
+        "stock": 7
       }
     ]
   },
   "egg": {
-    "secondsUntilRestock": 253,
-    "lastRestockAt": 1773204948187,
+    "secondsUntilRestock": 263,
+    "lastRestockAt": 1773206737987,
     "items": [
       {
         "name": "CommonEgg",
-        "stock": 2
-      },
-      {
-        "name": "UncommonEgg",
-        "stock": 1
-      },
-      {
-        "name": "LegendaryEgg",
         "stock": 1
       }
     ]
   },
   "decor": {
-    "secondsUntilRestock": 253,
-    "lastRestockAt": 1773202765876,
+    "secondsUntilRestock": 2063,
+    "lastRestockAt": 1773206737987,
     "items": [
       {
         "name": "SmallRock",
@@ -88,8 +88,8 @@
         "stock": 2
       },
       {
-        "name": "WoodPergola",
-        "stock": 2
+        "name": "WoodBirdhouse",
+        "stock": 1
       },
       {
         "name": "StoneBench",
