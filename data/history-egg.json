@@ -486,11 +486,10 @@
   "egg:CommonEgg": {
     "itemId": "CommonEgg",
     "shopType": "egg",
-    "totalOccurrences": 1397,
+    "totalOccurrences": 1398,
     "firstSeen": 1770105624507,
-    "lastSeen": 1773253676668,
+    "lastSeen": 1773255113655,
     "recentTimestamps": [
-      1773178605100,
       1773179396776,
       1773180001155,
       1773181711064,
@@ -539,17 +538,17 @@
       1773249195694,
       1773250559011,
       1773251945672,
-      1773253676668
+      1773253676668,
+      1773255113655
     ]
   },
   "egg:UncommonEgg": {
     "itemId": "UncommonEgg",
     "shopType": "egg",
-    "totalOccurrences": 556,
+    "totalOccurrences": 557,
     "firstSeen": 1770108761663,
-    "lastSeen": 1773251945672,
+    "lastSeen": 1773255113655,
     "recentTimestamps": [
-      1773055484471,
       1773060379251,
       1773068563628,
       1773074890107,
@@ -598,17 +597,17 @@
       1773234197190,
       1773242094244,
       1773249195694,
-      1773251945672
+      1773251945672,
+      1773255113655
     ]
   },
   "egg:RareEgg": {
     "itemId": "RareEgg",
     "shopType": "egg",
-    "totalOccurrences": 446,
+    "totalOccurrences": 447,
     "firstSeen": 1770116862608,
-    "lastSeen": 1773249195694,
+    "lastSeen": 1773255113655,
     "recentTimestamps": [
-      1773009560147,
       1773012515302,
       1773029607380,
       1773032328746,
@@ -657,7 +656,8 @@
       1773236276223,
       1773246357387,
       1773247750708,
-      1773249195694
+      1773249195694,
+      1773255113655
     ]
   },
   "egg:SnowEgg": {
@@ -711,11 +711,10 @@
   "egg:LegendaryEgg": {
     "itemId": "LegendaryEgg",
     "shopType": "egg",
-    "totalOccurrences": 144,
+    "totalOccurrences": 145,
     "firstSeen": 1770173011888,
-    "lastSeen": 1773223471427,
+    "lastSeen": 1773255113655,
     "recentTimestamps": [
-      1772722414072,
       1772738865494,
       1772740284767,
       1772741214336,
@@ -764,7 +763,8 @@
       1773202765876,
       1773204948187,
       1773209268344,
-      1773223471427
+      1773223471427,
+      1773255113655
     ]
   },
   "egg:MythicalEgg": {
