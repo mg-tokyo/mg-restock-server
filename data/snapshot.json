@@ -1,78 +1,70 @@
 {
   "seed": {
-    "secondsUntilRestock": 77,
-    "lastRestockAt": 1773397124981,
+    "secondsUntilRestock": 146,
+    "lastRestockAt": 1773398255432,
     "items": [
       {
         "name": "Carrot",
-        "stock": 20
-      },
-      {
-        "name": "Cabbage",
-        "stock": 3
-      },
-      {
-        "name": "Strawberry",
-        "stock": 6
-      },
-      {
-        "name": "Aloe",
-        "stock": 10
-      },
-      {
-        "name": "Beet",
         "stock": 9
       },
       {
+        "name": "Cabbage",
+        "stock": 2
+      },
+      {
+        "name": "Strawberry",
+        "stock": 3
+      },
+      {
+        "name": "Aloe",
+        "stock": 8
+      },
+      {
+        "name": "Beet",
+        "stock": 5
+      },
+      {
+        "name": "FavaBean",
+        "stock": 5
+      },
+      {
         "name": "Blueberry",
-        "stock": 1
+        "stock": 5
       },
       {
         "name": "OrangeTulip",
-        "stock": 10
+        "stock": 11
       },
       {
-        "name": "Pumpkin",
-        "stock": 1
-      },
-      {
-        "name": "Echeveria",
-        "stock": 2
-      },
-      {
-        "name": "Pear",
-        "stock": 1
-      },
-      {
-        "name": "Lily",
-        "stock": 2
-      },
-      {
-        "name": "Peach",
+        "name": "Camellia",
         "stock": 1
       },
       {
         "name": "BurrosTail",
         "stock": 2
-      },
-      {
-        "name": "Mushroom",
-        "stock": 22
       }
     ]
   },
   "egg": {
-    "secondsUntilRestock": 677,
-    "lastRestockAt": 1773397124981,
+    "secondsUntilRestock": 446,
+    "lastRestockAt": 1773398255432,
     "items": [
       {
         "name": "CommonEgg",
+        "stock": 2
+      },
+      {
+        "name": "UncommonEgg",
+        "stock": 1
+      },
+      {
+        "name": "RareEgg",
         "stock": 1
       }
     ]
   },
   "decor": {
-    "secondsUntilRestock": 2477,
+    "secondsUntilRestock": 1346,
     "lastRestockAt": 1773396015818,
     "items": [
       {
