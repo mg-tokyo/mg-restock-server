@@ -486,11 +486,10 @@
   "egg:CommonEgg": {
     "itemId": "CommonEgg",
     "shopType": "egg",
-    "totalOccurrences": 1802,
+    "totalOccurrences": 1803,
     "firstSeen": 1770105624507,
-    "lastSeen": 1773863193402,
+    "lastSeen": 1773864110711,
     "recentTimestamps": [
-      1773779004263,
       1773780236708,
       1773781325446,
       1773782466790,
@@ -539,17 +538,17 @@
       1773856977526,
       1773858608458,
       1773861847341,
-      1773863193402
+      1773863193402,
+      1773864110711
     ]
   },
   "egg:UncommonEgg": {
     "itemId": "UncommonEgg",
     "shopType": "egg",
-    "totalOccurrences": 728,
+    "totalOccurrences": 729,
     "firstSeen": 1770108761663,
-    "lastSeen": 1773861847341,
+    "lastSeen": 1773864110711,
     "recentTimestamps": [
-      1773643602148,
       1773650758995,
       1773652329088,
       1773657425260,
@@ -598,17 +597,17 @@
       1773850246851,
       1773851943557,
       1773853657689,
-      1773861847341
+      1773861847341,
+      1773864110711
     ]
   },
   "egg:RareEgg": {
     "itemId": "RareEgg",
     "shopType": "egg",
-    "totalOccurrences": 576,
+    "totalOccurrences": 577,
     "firstSeen": 1770116862608,
-    "lastSeen": 1773863193402,
+    "lastSeen": 1773864110711,
     "recentTimestamps": [
-      1773589948510,
       1773592462542,
       1773595005888,
       1773596041554,
@@ -657,7 +656,8 @@
       1773846472117,
       1773855381669,
       1773861847341,
-      1773863193402
+      1773863193402,
+      1773864110711
     ]
   },
   "egg:SnowEgg": {
