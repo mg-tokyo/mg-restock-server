@@ -1,78 +1,82 @@
 {
   "seed": {
-    "secondsUntilRestock": 181,
-    "lastRestockAt": 1774232519343,
+    "secondsUntilRestock": 108,
+    "lastRestockAt": 1774236492331,
     "items": [
       {
         "name": "Carrot",
-        "stock": 21
+        "stock": 19
       },
       {
         "name": "Cabbage",
-        "stock": 3
-      },
-      {
-        "name": "Strawberry",
-        "stock": 6
-      },
-      {
-        "name": "Aloe",
-        "stock": 8
-      },
-      {
-        "name": "Beet",
-        "stock": 7
-      },
-      {
-        "name": "FavaBean",
         "stock": 2
       },
       {
-        "name": "Blueberry",
-        "stock": 5
+        "name": "Strawberry",
+        "stock": 3
       },
       {
-        "name": "Tomato",
+        "name": "Aloe",
+        "stock": 9
+      },
+      {
+        "name": "Beet",
+        "stock": 6
+      },
+      {
+        "name": "FavaBean",
+        "stock": 4
+      },
+      {
+        "name": "Blueberry",
+        "stock": 4
+      },
+      {
+        "name": "Apple",
+        "stock": 2
+      },
+      {
+        "name": "Pumpkin",
         "stock": 2
       },
       {
         "name": "Lily",
+        "stock": 3
+      },
+      {
+        "name": "Camellia",
         "stock": 1
       },
       {
-        "name": "Peach",
-        "stock": 1
+        "name": "Cactus",
+        "stock": 5
       }
     ]
   },
   "egg": {
-    "secondsUntilRestock": 481,
-    "lastRestockAt": 1774232519343,
+    "secondsUntilRestock": 108,
+    "lastRestockAt": 1774236492331,
     "items": [
       {
         "name": "CommonEgg",
-        "stock": 1
+        "stock": 2
       },
       {
-        "name": "UncommonEgg",
+        "name": "RareEgg",
         "stock": 1
       }
     ]
   },
   "decor": {
-    "secondsUntilRestock": 2281,
-    "lastRestockAt": 1774232519343,
+    "secondsUntilRestock": 1908,
+    "lastRestockAt": 1774236492331,
     "items": [
       {
         "name": "SmallRock",
-        "stock": 5
+        "stock": 4
       },
       {
         "name": "MediumRock",
-        "stock": 3
-      },
-      {
-        "name": "StringLights",
         "stock": 2
       },
       {
