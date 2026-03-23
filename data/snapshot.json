@@ -1,11 +1,11 @@
 {
   "seed": {
-    "secondsUntilRestock": 227,
-    "lastRestockAt": 1774284974276,
+    "secondsUntilRestock": 78,
+    "lastRestockAt": 1774286623520,
     "items": [
       {
         "name": "Carrot",
-        "stock": 16
+        "stock": 9
       },
       {
         "name": "Cabbage",
@@ -17,19 +17,19 @@
       },
       {
         "name": "Aloe",
-        "stock": 8
+        "stock": 9
       },
       {
         "name": "Clover",
-        "stock": 1
+        "stock": 3
       },
       {
         "name": "Beet",
-        "stock": 5
+        "stock": 9
       },
       {
         "name": "FavaBean",
-        "stock": 3
+        "stock": 2
       },
       {
         "name": "Blueberry",
@@ -40,32 +40,32 @@
         "stock": 3
       },
       {
-        "name": "Coconut",
-        "stock": 1
-      },
-      {
         "name": "Lily",
-        "stock": 1
+        "stock": 2
       }
     ]
   },
   "egg": {
-    "secondsUntilRestock": 227,
-    "lastRestockAt": 1774284974276,
+    "secondsUntilRestock": 378,
+    "lastRestockAt": 1774286623520,
     "items": [
       {
         "name": "CommonEgg",
-        "stock": 1
+        "stock": 3
       },
       {
         "name": "UncommonEgg",
+        "stock": 1
+      },
+      {
+        "name": "SnowEgg",
         "stock": 1
       }
     ]
   },
   "decor": {
-    "secondsUntilRestock": 227,
-    "lastRestockAt": 1774281945560,
+    "secondsUntilRestock": 2178,
+    "lastRestockAt": 1774286623520,
     "items": [
       {
         "name": "SmallRock",
@@ -88,8 +88,12 @@
         "stock": 2
       },
       {
-        "name": "WoodBirdhouse",
-        "stock": 1
+        "name": "WoodPergola",
+        "stock": 2
+      },
+      {
+        "name": "WoodBridge",
+        "stock": 2
       },
       {
         "name": "StoneBench",
@@ -100,15 +104,7 @@
         "stock": 2
       },
       {
-        "name": "StoneLampPost",
-        "stock": 1
-      },
-      {
         "name": "MarbleBench",
-        "stock": 1
-      },
-      {
-        "name": "MarbleArch",
         "stock": 1
       },
       {
