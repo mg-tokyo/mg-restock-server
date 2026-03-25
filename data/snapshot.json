@@ -1,90 +1,58 @@
 {
   "seed": {
-    "secondsUntilRestock": 95,
-    "lastRestockAt": 1774473506267,
+    "secondsUntilRestock": 152,
+    "lastRestockAt": 1774474649163,
     "items": [
       {
         "name": "Carrot",
-        "stock": 15
-      },
-      {
-        "name": "Cabbage",
-        "stock": 3
-      },
-      {
-        "name": "Strawberry",
-        "stock": 1
-      },
-      {
-        "name": "Aloe",
-        "stock": 7
-      },
-      {
-        "name": "Beet",
         "stock": 6
       },
       {
-        "name": "FavaBean",
-        "stock": 4
-      },
-      {
-        "name": "Apple",
+        "name": "Cabbage",
         "stock": 2
       },
       {
-        "name": "OrangeTulip",
-        "stock": 20
+        "name": "Strawberry",
+        "stock": 5
+      },
+      {
+        "name": "Aloe",
+        "stock": 9
+      },
+      {
+        "name": "Clover",
+        "stock": 2
+      },
+      {
+        "name": "Beet",
+        "stock": 7
       },
       {
         "name": "Tomato",
-        "stock": 1
-      },
-      {
-        "name": "Echeveria",
         "stock": 2
-      },
-      {
-        "name": "Pear",
-        "stock": 1
-      },
-      {
-        "name": "Gentian",
-        "stock": 2
-      },
-      {
-        "name": "Banana",
-        "stock": 3
-      },
-      {
-        "name": "Lily",
-        "stock": 3
       },
       {
         "name": "Camellia",
         "stock": 1
-      },
-      {
-        "name": "Peach",
-        "stock": 1
-      },
-      {
-        "name": "Cactus",
-        "stock": 7
       }
     ]
   },
   "egg": {
-    "secondsUntilRestock": 695,
-    "lastRestockAt": 1774473506267,
+    "secondsUntilRestock": 452,
+    "lastRestockAt": 1774474649163,
     "items": [
       {
         "name": "CommonEgg",
         "stock": 3
+      },
+      {
+        "name": "RareEgg",
+        "stock": 1
       }
     ]
   },
   "decor": {
-    "secondsUntilRestock": 2495,
+    "secondsUntilRestock": 1352,
     "lastRestockAt": 1774473506267,
     "items": [
       {
