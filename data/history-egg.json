@@ -486,11 +486,10 @@
   "egg:CommonEgg": {
     "itemId": "CommonEgg",
     "shopType": "egg",
-    "totalOccurrences": 2226,
+    "totalOccurrences": 2227,
     "firstSeen": 1770105624507,
-    "lastSeen": 1774492253822,
+    "lastSeen": 1774496265825,
     "recentTimestamps": [
-      1774414972240,
       1774417049497,
       1774418682975,
       1774420485614,
@@ -539,17 +538,17 @@
       1774482312819,
       1774486435469,
       1774488853775,
-      1774492253822
+      1774492253822,
+      1774496265825
     ]
   },
   "egg:UncommonEgg": {
     "itemId": "UncommonEgg",
     "shopType": "egg",
-    "totalOccurrences": 883,
+    "totalOccurrences": 884,
     "firstSeen": 1770108761663,
-    "lastSeen": 1774492253822,
+    "lastSeen": 1774496265825,
     "recentTimestamps": [
-      1774283455632,
       1774284974276,
       1774286623520,
       1774294900385,
@@ -598,7 +597,8 @@
       1774482312819,
       1774486435469,
       1774488853775,
-      1774492253822
+      1774492253822,
+      1774496265825
     ]
   },
   "egg:RareEgg": {
@@ -722,11 +722,10 @@
   "egg:LegendaryEgg": {
     "itemId": "LegendaryEgg",
     "shopType": "egg",
-    "totalOccurrences": 226,
+    "totalOccurrences": 227,
     "firstSeen": 1770173011888,
-    "lastSeen": 1774476886678,
+    "lastSeen": 1774496265825,
     "recentTimestamps": [
-      1773750797010,
       1773772187797,
       1773774006939,
       1773779004263,
@@ -775,15 +774,16 @@
       1774428229195,
       1774449621519,
       1774458617406,
-      1774476886678
+      1774476886678,
+      1774496265825
     ]
   },
   "egg:MythicalEgg": {
     "itemId": "MythicalEgg",
     "shopType": "egg",
-    "totalOccurrences": 25,
+    "totalOccurrences": 26,
     "firstSeen": 1770572754823,
-    "lastSeen": 1774455028319,
+    "lastSeen": 1774496265825,
     "recentTimestamps": [
       1770572754823,
       1770589847002,
@@ -809,7 +809,8 @@
       1774075475837,
       1774310423179,
       1774340752163,
-      1774455028319
+      1774455028319,
+      1774496265825
     ]
   }
 }
