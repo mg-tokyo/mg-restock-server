@@ -1,49 +1,49 @@
 {
   "seed": {
-    "secondsUntilRestock": 166,
-    "lastRestockAt": 1774558335234,
+    "secondsUntilRestock": 298,
+    "lastRestockAt": 1774559103406,
     "items": [
       {
         "name": "Carrot",
-        "stock": 7
+        "stock": 25
       },
       {
         "name": "Cabbage",
-        "stock": 3
-      },
-      {
-        "name": "Strawberry",
         "stock": 2
       },
       {
+        "name": "Strawberry",
+        "stock": 6
+      },
+      {
         "name": "Aloe",
-        "stock": 4
-      },
-      {
-        "name": "Clover",
-        "stock": 1
-      },
-      {
-        "name": "Beet",
-        "stock": 8
-      },
-      {
-        "name": "FavaBean",
-        "stock": 5
-      },
-      {
-        "name": "Watermelon",
         "stock": 3
       },
       {
-        "name": "Mushroom",
-        "stock": 24
+        "name": "Beet",
+        "stock": 6
+      },
+      {
+        "name": "FavaBean",
+        "stock": 3
+      },
+      {
+        "name": "Banana",
+        "stock": 3
+      },
+      {
+        "name": "Lily",
+        "stock": 1
+      },
+      {
+        "name": "Peach",
+        "stock": 1
       }
     ]
   },
   "egg": {
-    "secondsUntilRestock": 466,
-    "lastRestockAt": 1774558335234,
+    "secondsUntilRestock": 598,
+    "lastRestockAt": 1774559103406,
     "items": [
       {
         "name": "CommonEgg",
@@ -52,8 +52,8 @@
     ]
   },
   "decor": {
-    "secondsUntilRestock": 466,
-    "lastRestockAt": 1774556186129,
+    "secondsUntilRestock": 3298,
+    "lastRestockAt": 1774559103406,
     "items": [
       {
         "name": "SmallRock",
@@ -80,8 +80,8 @@
         "stock": 2
       },
       {
-        "name": "WoodWindmill",
-        "stock": 1
+        "name": "WoodPergola",
+        "stock": 2
       },
       {
         "name": "StoneBench",
@@ -92,11 +92,11 @@
         "stock": 2
       },
       {
-        "name": "StoneLampPost",
-        "stock": 1
+        "name": "StoneBridge",
+        "stock": 2
       },
       {
-        "name": "MarbleBench",
+        "name": "MarbleLampPost",
         "stock": 1
       },
       {
