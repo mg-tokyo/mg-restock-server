@@ -1,86 +1,74 @@
 {
   "seed": {
-    "secondsUntilRestock": 126,
-    "lastRestockAt": 1774651074682,
+    "secondsUntilRestock": 268,
+    "lastRestockAt": 1774652132545,
     "items": [
       {
         "name": "Carrot",
-        "stock": 8
+        "stock": 21
       },
       {
         "name": "Cabbage",
-        "stock": 3
+        "stock": 2
       },
       {
         "name": "Strawberry",
-        "stock": 5
+        "stock": 4
       },
       {
         "name": "Aloe",
-        "stock": 8
+        "stock": 7
+      },
+      {
+        "name": "Clover",
+        "stock": 1
       },
       {
         "name": "Beet",
         "stock": 5
       },
       {
-        "name": "FavaBean",
-        "stock": 2
-      },
-      {
         "name": "Blueberry",
-        "stock": 4
+        "stock": 3
       },
       {
-        "name": "Tomato",
-        "stock": 2
+        "name": "OrangeTulip",
+        "stock": 24
       },
       {
         "name": "Watermelon",
         "stock": 2
       },
       {
-        "name": "Echeveria",
-        "stock": 2
-      },
-      {
-        "name": "Banana",
+        "name": "Pumpkin",
         "stock": 1
       },
       {
-        "name": "Lily",
+        "name": "Coconut",
+        "stock": 1
+      },
+      {
+        "name": "Peach",
+        "stock": 1
+      },
+      {
+        "name": "BurrosTail",
         "stock": 3
-      },
-      {
-        "name": "Grape",
-        "stock": 1
-      },
-      {
-        "name": "Pepper",
-        "stock": 1
-      },
-      {
-        "name": "Lemon",
-        "stock": 1
       }
     ]
   },
   "egg": {
-    "secondsUntilRestock": 426,
-    "lastRestockAt": 1774651074682,
+    "secondsUntilRestock": 268,
+    "lastRestockAt": 1774652132545,
     "items": [
       {
         "name": "CommonEgg",
-        "stock": 1
-      },
-      {
-        "name": "UncommonEgg",
         "stock": 1
       }
     ]
   },
   "decor": {
-    "secondsUntilRestock": 1326,
+    "secondsUntilRestock": 268,
     "lastRestockAt": 1774649121974,
     "items": [
       {
