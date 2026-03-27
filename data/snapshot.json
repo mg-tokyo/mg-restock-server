@@ -1,39 +1,31 @@
 {
   "seed": {
-    "secondsUntilRestock": 105,
-    "lastRestockAt": 1774598595777,
+    "secondsUntilRestock": 249,
+    "lastRestockAt": 1774599951975,
     "items": [
       {
         "name": "Carrot",
-        "stock": 18
+        "stock": 17
       },
       {
         "name": "Cabbage",
-        "stock": 2
+        "stock": 3
       },
       {
         "name": "Strawberry",
-        "stock": 6
+        "stock": 2
       },
       {
         "name": "Aloe",
         "stock": 9
       },
       {
-        "name": "Clover",
-        "stock": 3
-      },
-      {
         "name": "Beet",
-        "stock": 8
+        "stock": 5
       },
       {
         "name": "FavaBean",
-        "stock": 4
-      },
-      {
-        "name": "Blueberry",
-        "stock": 2
+        "stock": 3
       },
       {
         "name": "Apple",
@@ -41,34 +33,54 @@
       },
       {
         "name": "OrangeTulip",
-        "stock": 9
+        "stock": 15
       },
       {
         "name": "Tomato",
-        "stock": 1
-      },
-      {
-        "name": "Camellia",
-        "stock": 1
-      },
-      {
-        "name": "BurrosTail",
         "stock": 3
+      },
+      {
+        "name": "Watermelon",
+        "stock": 5
+      },
+      {
+        "name": "Echeveria",
+        "stock": 1
+      },
+      {
+        "name": "Banana",
+        "stock": 2
+      },
+      {
+        "name": "Lily",
+        "stock": 1
+      },
+      {
+        "name": "Peach",
+        "stock": 1
       }
     ]
   },
   "egg": {
-    "secondsUntilRestock": 705,
-    "lastRestockAt": 1774598595777,
+    "secondsUntilRestock": 249,
+    "lastRestockAt": 1774599951975,
     "items": [
       {
         "name": "CommonEgg",
+        "stock": 3
+      },
+      {
+        "name": "UncommonEgg",
+        "stock": 1
+      },
+      {
+        "name": "RareEgg",
         "stock": 1
       }
     ]
   },
   "decor": {
-    "secondsUntilRestock": 3405,
+    "secondsUntilRestock": 2049,
     "lastRestockAt": 1774598595777,
     "items": [
       {
