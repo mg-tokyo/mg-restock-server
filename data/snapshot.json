@@ -1,23 +1,23 @@
 {
   "seed": {
-    "secondsUntilRestock": 47,
-    "lastRestockAt": 1774772055001,
+    "secondsUntilRestock": 157,
+    "lastRestockAt": 1774773144047,
     "items": [
       {
         "name": "Carrot",
-        "stock": 17
+        "stock": 16
       },
       {
         "name": "Cabbage",
-        "stock": 3
-      },
-      {
-        "name": "Strawberry",
         "stock": 2
       },
       {
-        "name": "Aloe",
+        "name": "Strawberry",
         "stock": 3
+      },
+      {
+        "name": "Aloe",
+        "stock": 6
       },
       {
         "name": "Clover",
@@ -25,15 +25,15 @@
       },
       {
         "name": "Beet",
-        "stock": 5
+        "stock": 6
       },
       {
         "name": "FavaBean",
-        "stock": 5
+        "stock": 2
       },
       {
         "name": "Blueberry",
-        "stock": 5
+        "stock": 3
       },
       {
         "name": "Apple",
@@ -41,41 +41,37 @@
       },
       {
         "name": "Daffodil",
-        "stock": 3
-      },
-      {
-        "name": "Corn",
-        "stock": 3
-      },
-      {
-        "name": "Pumpkin",
-        "stock": 4
-      },
-      {
-        "name": "Pear",
-        "stock": 1
-      },
-      {
-        "name": "Lily",
         "stock": 2
       },
       {
-        "name": "Mushroom",
-        "stock": 18
+        "name": "Banana",
+        "stock": 3
       },
       {
-        "name": "VioletCort",
+        "name": "Camellia",
+        "stock": 1
+      },
+      {
+        "name": "Peach",
+        "stock": 1
+      },
+      {
+        "name": "BurrosTail",
+        "stock": 3
+      },
+      {
+        "name": "Bamboo",
         "stock": 9
       },
       {
-        "name": "Chrysanthemum",
-        "stock": 1
+        "name": "Cacao",
+        "stock": 2
       }
     ]
   },
   "egg": {
-    "secondsUntilRestock": 47,
-    "lastRestockAt": 1774772055001,
+    "secondsUntilRestock": 757,
+    "lastRestockAt": 1774773144047,
     "items": [
       {
         "name": "CommonEgg",
@@ -84,7 +80,7 @@
     ]
   },
   "decor": {
-    "secondsUntilRestock": 2747,
+    "secondsUntilRestock": 1657,
     "lastRestockAt": 1774772055001,
     "items": [
       {
