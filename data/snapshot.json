@@ -1,7 +1,7 @@
 {
   "seed": {
-    "secondsUntilRestock": 111,
-    "lastRestockAt": 1774818190904,
+    "secondsUntilRestock": 118,
+    "lastRestockAt": 1774819083381,
     "items": [
       {
         "name": "Carrot",
@@ -9,56 +9,60 @@
       },
       {
         "name": "Cabbage",
-        "stock": 2
-      },
-      {
-        "name": "Strawberry",
-        "stock": 6
-      },
-      {
-        "name": "Aloe",
-        "stock": 10
-      },
-      {
-        "name": "Clover",
-        "stock": 2
-      },
-      {
-        "name": "Beet",
-        "stock": 7
-      },
-      {
-        "name": "Apple",
-        "stock": 2
-      },
-      {
-        "name": "Tomato",
         "stock": 3
       },
       {
-        "name": "Corn",
-        "stock": 1
+        "name": "Strawberry",
+        "stock": 4
       },
       {
-        "name": "Watermelon",
-        "stock": 5
-      },
-      {
-        "name": "Lily",
-        "stock": 2
-      },
-      {
-        "name": "Cactus",
+        "name": "Aloe",
         "stock": 7
       },
       {
-        "name": "Cacao",
+        "name": "Beet",
+        "stock": 10
+      },
+      {
+        "name": "FavaBean",
+        "stock": 4
+      },
+      {
+        "name": "Blueberry",
+        "stock": 1
+      },
+      {
+        "name": "Apple",
+        "stock": 1
+      },
+      {
+        "name": "OrangeTulip",
+        "stock": 12
+      },
+      {
+        "name": "Tomato",
+        "stock": 2
+      },
+      {
+        "name": "Camellia",
+        "stock": 1
+      },
+      {
+        "name": "Peach",
+        "stock": 1
+      },
+      {
+        "name": "BurrosTail",
+        "stock": 3
+      },
+      {
+        "name": "Sunflower",
         "stock": 1
       }
     ]
   },
   "egg": {
-    "secondsUntilRestock": 711,
+    "secondsUntilRestock": 718,
     "lastRestockAt": 1774818190904,
     "items": [
       {
@@ -72,7 +76,7 @@
     ]
   },
   "decor": {
-    "secondsUntilRestock": 3411,
+    "secondsUntilRestock": 2518,
     "lastRestockAt": 1774818190904,
     "items": [
       {
