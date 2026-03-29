@@ -1,11 +1,11 @@
 {
   "seed": {
-    "secondsUntilRestock": 184,
-    "lastRestockAt": 1774762017743,
+    "secondsUntilRestock": 257,
+    "lastRestockAt": 1774764044568,
     "items": [
       {
         "name": "Carrot",
-        "stock": 25
+        "stock": 24
       },
       {
         "name": "Cabbage",
@@ -20,56 +20,52 @@
         "stock": 4
       },
       {
-        "name": "Clover",
-        "stock": 3
-      },
-      {
         "name": "Beet",
-        "stock": 9
+        "stock": 5
       },
       {
         "name": "FavaBean",
-        "stock": 2
+        "stock": 4
       },
       {
         "name": "Blueberry",
-        "stock": 1
+        "stock": 4
       },
       {
-        "name": "Apple",
+        "name": "OrangeTulip",
+        "stock": 12
+      },
+      {
+        "name": "Tomato",
         "stock": 2
       },
       {
-        "name": "Watermelon",
-        "stock": 6
-      },
-      {
-        "name": "Echeveria",
-        "stock": 2
-      },
-      {
-        "name": "Camellia",
+        "name": "Peach",
         "stock": 1
       },
       {
         "name": "BurrosTail",
-        "stock": 2
+        "stock": 3
+      },
+      {
+        "name": "Mushroom",
+        "stock": 23
       }
     ]
   },
   "egg": {
-    "secondsUntilRestock": 184,
-    "lastRestockAt": 1774762017743,
+    "secondsUntilRestock": 857,
+    "lastRestockAt": 1774764044568,
     "items": [
       {
         "name": "CommonEgg",
-        "stock": 2
+        "stock": 3
       }
     ]
   },
   "decor": {
-    "secondsUntilRestock": 1984,
-    "lastRestockAt": 1774762017743,
+    "secondsUntilRestock": 3557,
+    "lastRestockAt": 1774764044568,
     "items": [
       {
         "name": "SmallRock",
@@ -80,7 +76,7 @@
         "stock": 2
       },
       {
-        "name": "StringLights",
+        "name": "HayBale",
         "stock": 2
       },
       {
@@ -92,6 +88,10 @@
         "stock": 2
       },
       {
+        "name": "WoodPergola",
+        "stock": 2
+      },
+      {
         "name": "StoneBench",
         "stock": 2
       },
@@ -100,8 +100,20 @@
         "stock": 2
       },
       {
-        "name": "StoneBridge",
-        "stock": 2
+        "name": "StoneLampPost",
+        "stock": 1
+      },
+      {
+        "name": "MarbleBench",
+        "stock": 1
+      },
+      {
+        "name": "MarbleBridge",
+        "stock": 1
+      },
+      {
+        "name": "MarbleLampPost",
+        "stock": 1
       },
       {
         "name": "FeedingTrough",
