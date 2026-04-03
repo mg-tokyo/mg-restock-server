@@ -1,19 +1,19 @@
 {
   "seed": {
-    "secondsUntilRestock": 151,
-    "lastRestockAt": 1775201549848,
+    "secondsUntilRestock": 28,
+    "lastRestockAt": 1775203172506,
     "items": [
       {
         "name": "Carrot",
-        "stock": 20
+        "stock": 23
       },
       {
         "name": "Cabbage",
-        "stock": 3
+        "stock": 2
       },
       {
         "name": "Strawberry",
-        "stock": 3
+        "stock": 5
       },
       {
         "name": "Aloe",
@@ -25,54 +25,58 @@
       },
       {
         "name": "FavaBean",
-        "stock": 2
-      },
-      {
-        "name": "Blueberry",
-        "stock": 2
+        "stock": 3
       },
       {
         "name": "Apple",
         "stock": 1
       },
       {
-        "name": "Daffodil",
-        "stock": 4
+        "name": "OrangeTulip",
+        "stock": 24
       },
       {
-        "name": "Corn",
-        "stock": 6
-      },
-      {
-        "name": "Echeveria",
-        "stock": 1
-      },
-      {
-        "name": "Pear",
-        "stock": 1
-      },
-      {
-        "name": "Peach",
-        "stock": 1
-      },
-      {
-        "name": "BurrosTail",
+        "name": "Tomato",
         "stock": 2
+      },
+      {
+        "name": "Pumpkin",
+        "stock": 3
+      },
+      {
+        "name": "Mushroom",
+        "stock": 21
+      },
+      {
+        "name": "Grape",
+        "stock": 1
       }
     ]
   },
   "egg": {
-    "secondsUntilRestock": 751,
-    "lastRestockAt": 1775201549848,
+    "secondsUntilRestock": 28,
+    "lastRestockAt": 1775203172506,
     "items": [
       {
         "name": "CommonEgg",
-        "stock": 2
+        "stock": 3
+      },
+      {
+        "name": "UncommonEgg",
+        "stock": 1
+      },
+      {
+        "name": "RareEgg",
+        "stock": 1
+      },
+      {
+        "name": "MythicalEgg",
+        "stock": 1
       }
     ]
   },
   "decor": {
-    "secondsUntilRestock": 1651,
+    "secondsUntilRestock": 28,
     "lastRestockAt": 1775201549848,
     "items": [
       {
