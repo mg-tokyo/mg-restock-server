@@ -1,11 +1,11 @@
 {
   "seed": {
-    "secondsUntilRestock": 207,
-    "lastRestockAt": 1775321494379,
+    "secondsUntilRestock": 297,
+    "lastRestockAt": 1775322304117,
     "items": [
       {
         "name": "Carrot",
-        "stock": 19
+        "stock": 7
       },
       {
         "name": "Cabbage",
@@ -13,33 +13,53 @@
       },
       {
         "name": "Strawberry",
-        "stock": 4
+        "stock": 6
       },
       {
         "name": "Aloe",
-        "stock": 9
+        "stock": 8
       },
       {
         "name": "Beet",
         "stock": 5
       },
       {
-        "name": "Apple",
-        "stock": 1
+        "name": "FavaBean",
+        "stock": 2
+      },
+      {
+        "name": "Blueberry",
+        "stock": 2
       },
       {
         "name": "Tomato",
+        "stock": 3
+      },
+      {
+        "name": "Echeveria",
         "stock": 1
       },
       {
         "name": "Pear",
         "stock": 1
+      },
+      {
+        "name": "Banana",
+        "stock": 1
+      },
+      {
+        "name": "Lily",
+        "stock": 2
+      },
+      {
+        "name": "Peach",
+        "stock": 1
       }
     ]
   },
   "egg": {
-    "secondsUntilRestock": 507,
-    "lastRestockAt": 1775321494379,
+    "secondsUntilRestock": 597,
+    "lastRestockAt": 1775322304117,
     "items": [
       {
         "name": "CommonEgg",
@@ -48,12 +68,16 @@
       {
         "name": "RareEgg",
         "stock": 1
+      },
+      {
+        "name": "LegendaryEgg",
+        "stock": 1
       }
     ]
   },
   "decor": {
-    "secondsUntilRestock": 507,
-    "lastRestockAt": 1775319284748,
+    "secondsUntilRestock": 3297,
+    "lastRestockAt": 1775322304117,
     "items": [
       {
         "name": "SmallRock",
@@ -72,6 +96,10 @@
         "stock": 2
       },
       {
+        "name": "WoodBridge",
+        "stock": 2
+      },
+      {
         "name": "StoneBench",
         "stock": 2
       },
@@ -80,8 +108,8 @@
         "stock": 2
       },
       {
-        "name": "StoneBridge",
-        "stock": 2
+        "name": "MarbleBench",
+        "stock": 1
       },
       {
         "name": "FeedingTrough",
