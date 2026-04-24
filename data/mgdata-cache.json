@@ -1,5 +1,5 @@
 {
-  "savedAt": 1777055104293,
+  "savedAt": 1777059618994,
   "data": {
     "seed": [
       "Carrot",
@@ -77,6 +77,7 @@
       "WoodBridge",
       "WoodLampPost",
       "WoodOwl",
+      "WoodFrog",
       "WoodBirdhouse",
       "WoodWindmill",
       "MediumGravestone",
@@ -86,6 +87,7 @@
       "StoneBridge",
       "StoneLampPost",
       "StoneGnome",
+      "StoneGnomess",
       "StoneBirdbath",
       "LargeGravestone",
       "MarbleCaribou",
@@ -94,6 +96,7 @@
       "MarbleBridge",
       "MarbleLampPost",
       "MarbleBlobling",
+      "MarbleKnight",
       "MarbleFountain",
       "MiniFairyCottage",
       "Cauldron",
@@ -101,6 +104,7 @@
       "MiniFairyForge",
       "MiniFairyKeep",
       "MiniWizardTower",
+      "MiniFairyCastle",
       "FeedingTrough",
       "DecorShed",
       "PetHutch",
