@@ -14,7 +14,7 @@ supabase functions deploy restock-history --no-verify-jwt
 # Verify deployment
 curl -X GET "https://xjuvryjgrjchbhjixwzh.supabase.co/functions/v1/restock-history" \
   -H "apikey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InhqdXZyeWpncmpjaGJoaml4d3poIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzAxMDYyODMsImV4cCI6MjA4NTY4MjI4M30.MqQCBG-UMR4HYJU44Tz2orHUj9gMgJTMJtxpb_MHeps" \
-  -H "Origin: https://ryandt2305-cpu.github.io"
+  -H "Origin: https://mg-tokyo.github.io"
 ```
 
 **Why `--no-verify-jwt`?**
@@ -43,7 +43,7 @@ git push origin main
 
 ### 4. Access Your Tracker
 
-URL: `https://ryandt2305-cpu.github.io/Feeder-Extension/helpers/magic_garden_research/viz/restock-tracker/`
+URL: `https://mg-tokyo.github.io/Feeder-Extension/helpers/magic_garden_research/viz/restock-tracker/`
 
 ## 🧪 Testing
 
@@ -51,13 +51,13 @@ URL: `https://ryandt2305-cpu.github.io/Feeder-Extension/helpers/magic_garden_res
 
 ```bash
 # This should succeed (first request)
-curl -H "Origin: https://ryandt2305-cpu.github.io" \
+curl -H "Origin: https://mg-tokyo.github.io" \
      -H "apikey: YOUR_ANON_KEY" \
      https://xjuvryjgrjchbhjixwzh.supabase.co/functions/v1/restock-history
 
 # Rapid fire 70 requests (should get 429 after 60)
 for i in {1..70}; do
-  curl -s -H "Origin: https://ryandt2305-cpu.github.io" \
+  curl -s -H "Origin: https://mg-tokyo.github.io" \
        -H "apikey: YOUR_ANON_KEY" \
        https://xjuvryjgrjchbhjixwzh.supabase.co/functions/v1/restock-history \
        -w "\n%{http_code}\n" | tail -1
@@ -70,7 +70,7 @@ Expected: First 60 return `200`, remaining return `429`
 
 ```bash
 # Should work (allowed origin)
-curl -H "Origin: https://ryandt2305-cpu.github.io" \
+curl -H "Origin: https://mg-tokyo.github.io" \
      -H "apikey: YOUR_ANON_KEY" \
      https://xjuvryjgrjchbhjixwzh.supabase.co/functions/v1/restock-history \
      -I | grep "access-control-allow-origin"
@@ -87,7 +87,7 @@ curl -H "Origin: https://evil-site.com" \
 ```bash
 # First request (should set ETag)
 ETAG=$(curl -s -I \
-  -H "Origin: https://ryandt2305-cpu.github.io" \
+  -H "Origin: https://mg-tokyo.github.io" \
   -H "apikey: YOUR_ANON_KEY" \
   https://xjuvryjgrjchbhjixwzh.supabase.co/functions/v1/restock-history \
   | grep -i etag | cut -d' ' -f2 | tr -d '\r')
@@ -96,7 +96,7 @@ echo "ETag: $ETAG"
 
 # Second request with If-None-Match (should return 304)
 curl -s -I \
-  -H "Origin: https://ryandt2305-cpu.github.io" \
+  -H "Origin: https://mg-tokyo.github.io" \
   -H "apikey: YOUR_ANON_KEY" \
   -H "If-None-Match: $ETAG" \
   https://xjuvryjgrjchbhjixwzh.supabase.co/functions/v1/restock-history

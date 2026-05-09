@@ -15,6 +15,7 @@ const ALLOWED_ORIGINS: ReadonlySet<string> = new Set([
   "https://1227719606223765687.discordsays.com",
   // GitHub Pages domains for restock tracker
   "https://ryandt2305-cpu.github.io",
+  "https://mg-tokyo.github.io",
   "http://localhost:8000", // Local testing
   "http://127.0.0.1:8000",
 ]);

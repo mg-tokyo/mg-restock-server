@@ -129,7 +129,8 @@ function isTrustedOrigin(origin: string | null): boolean {
     "https://www.magiccircle.gg",
     "https://magicgarden.gg",
     "https://www.magicgarden.gg",
-    "https://ryandt2305-cpu.github.io"
+    "https://ryandt2305-cpu.github.io",
+    "https://mg-tokyo.github.io"
   ];
 
   return trusted.some(t => origin.startsWith(t));

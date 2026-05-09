@@ -13,7 +13,7 @@ The `restock-history` edge function is designed to be safely exposed to the publ
 
 **Allowed Origins:**
 - Game domains: `magiccircle.gg`, `magicgarden.gg`, `starweaver.org`
-- GitHub Pages: `ryandt2305-cpu.github.io`
+- GitHub Pages: `mg-tokyo.github.io`
 - Local testing: `localhost:8000`, `127.0.0.1:8000`
 
 ### 2. **Rate Limiting**
