@@ -24,6 +24,22 @@ jobs:
             exit 1
           fi
 
+      - name: Check restock pipeline health
+        run: |
+          RESULT=$(curl -sS \
+            -H "apikey: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}" \
+            -H "Authorization: Bearer ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}" \
+            -H "Content-Type: application/json" \
+            -X POST "${{ secrets.SUPABASE_URL }}/rest/v1/rpc/check_restock_pipeline_health" \
+            -d '{}')
+          STALE=$(echo "$RESULT" | grep -o '"is_stale":[a-z]*' | cut -d: -f2)
+          if [ "$STALE" = "true" ]; then
+            echo "ALERT: restock_history has not been updated in over 15 minutes!"
+            echo "$RESULT"
+            exit 1
+          fi
+          echo "Pipeline healthy: $RESULT"
+
       - name: Snapshot current predictions
         run: |
           curl -sS -f \
