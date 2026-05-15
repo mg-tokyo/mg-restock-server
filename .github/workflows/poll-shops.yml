@@ -40,17 +40,23 @@ jobs:
             -H "Authorization: Bearer ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}" \
             -H "Content-Type: application/json" \
             -X POST "${{ secrets.SUPABASE_URL }}/rest/v1/rpc/score_restock_prediction_outcomes" \
-            -d "{}"
+            -d '{"p_max_rows":20000}'
 
       - name: Refresh per-item model selection (daily UTC 00:00)
         run: |
           if [ "${{ github.event_name }}" = "workflow_dispatch" ] || [ "$(date -u +%H%M)" = "0002" ]; then
-            curl -sS -f \
+            HTTP_CODE=$(curl -sS -o /tmp/backtest_resp.json -w '%{http_code}' --max-time 90 \
               -H "apikey: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}" \
               -H "Authorization: Bearer ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}" \
               -H "Content-Type: application/json" \
               -X POST "${{ secrets.SUPABASE_URL }}/rest/v1/rpc/run_restock_item_model_backtests" \
-              -d '{"p_lookback_days":90,"p_min_samples":12,"p_min_backtest_events":8,"p_max_backtest_events":40}'
+              -d '{"p_lookback_days":90,"p_min_samples":12,"p_min_backtest_events":8,"p_max_backtest_events":40}')
+            if [ "$HTTP_CODE" -ge 400 ]; then
+              echo "Backtest RPC failed with HTTP $HTTP_CODE:"
+              cat /tmp/backtest_resp.json
+              exit 1
+            fi
+            echo "Backtest RPC returned HTTP $HTTP_CODE"
           else
             echo "Skipping model backtest refresh outside daily window."
           fi
