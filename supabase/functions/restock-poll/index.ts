@@ -90,7 +90,7 @@ function getClient() {
   return createClient(SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY, {
     auth: { persistSession: false },
     // Tool label for API-log usage counts (`npm run usage`).
-    global: { headers: { "x-client-info": "edge-fn/restock-poll" } },
+    global: { headers: { "X-Client-Info": "edge-fn/restock-poll" } },
   });
 }
 

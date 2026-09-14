@@ -147,6 +147,7 @@ where r.method != 'OPTIONS'
 const TOOL_EXPR = `
 coalesce(
   case
+    when h.x_client_info like '%, %' then regexp_extract(h.x_client_info, r', ([^,]+)$')
     when h.x_client_info like 'supabase-js/%runtime=deno%' then 'edge-functions (cron: restock-poll, weather-events)'
     else h.x_client_info
   end,
