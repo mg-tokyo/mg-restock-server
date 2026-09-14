@@ -1,0 +1,60 @@
+name: Archive Old Events
+
+# Monthly: copy restock/weather rows older than RETENTION_DAYS into the
+# mg-restock-archive project, verify every row, then prune the live project.
+on:
+  schedule:
+    - cron: '20 3 1 * *'
+  workflow_dispatch:
+    inputs:
+      delete:
+        description: 'Prune live after verified copy (true/false)'
+        default: 'true'
+
+concurrency:
+  group: archive-old-events
+  cancel-in-progress: false
+
+jobs:
+  archive:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Validate secrets
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          ARCHIVE_SUPABASE_URL: ${{ secrets.ARCHIVE_SUPABASE_URL }}
+          ARCHIVE_SERVICE_ROLE_KEY: ${{ secrets.ARCHIVE_SERVICE_ROLE_KEY }}
+        run: |
+          for v in SUPABASE_URL SUPABASE_SERVICE_ROLE_KEY ARCHIVE_SUPABASE_URL ARCHIVE_SERVICE_ROLE_KEY; do
+            if [ -z "${!v}" ]; then echo "Missing $v repository secret."; exit 1; fi
+          done
+
+      - name: Archive + prune
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          ARCHIVE_SUPABASE_URL: ${{ secrets.ARCHIVE_SUPABASE_URL }}
+          ARCHIVE_SERVICE_ROLE_KEY: ${{ secrets.ARCHIVE_SERVICE_ROLE_KEY }}
+          RETENTION_DAYS: '180'
+        run: |
+          FLAG="--delete"
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ github.event.inputs.delete }}" != "true" ]; then FLAG=""; fi
+          node scripts/archive-old-events.mjs $FLAG
+
+      - name: Reclaim space
+        run: |
+          curl -sS -f \
+            -H "apikey: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}" \
+            -H "Authorization: Bearer ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}" \
+            -H "Content-Type: application/json" \
+            -X POST "${{ secrets.SUPABASE_URL }}/rest/v1/rpc/run_storage_retention" -d '{}'

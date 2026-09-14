@@ -26,3 +26,6 @@ data/*.preview.json
 
 # keep data + scripts + workflow + package files tracked
 
+
+# local rollback snapshots (gzipped full-table dumps; too large for git)
+data/rollback-*/

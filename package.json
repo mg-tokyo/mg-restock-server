@@ -14,6 +14,7 @@
     "backfill:supabase": "node scripts/backfill-supabase.mjs",
     "backfill:gap-window": "node scripts/backfill-gap-window.mjs",
     "clean:supabase": "node scripts/clean-supabase.mjs",
+    "archive:old": "node scripts/archive-old-events.mjs",
     "restock:weather-diagnostics": "node scripts/restock-weather-diagnostics.mjs",
     "restock:backtest-summary": "node scripts/restock-backtest-summary.mjs",
     "seed": "npx tsx scripts/seed-magicshopkeeper.ts",
