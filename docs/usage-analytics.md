@@ -35,13 +35,20 @@ npm run usage -- --save          # also append the summary to data/usage-history
 npm run usage -- --json          # raw JSON
 ```
 
-Columns:
+Reading the output:
 
-- `ips`: distinct client IPs. The closest thing to "people" without a client identifier.
+- The headline **people** number is distinct client IPs across the user-facing tools (QPM and
+  restock-tracker) with infra traffic excluded. Someone using both tools counts once; the `both`
+  figure shows that overlap. Per-tool rows can't be summed for this reason.
+- Rows are grouped into **Users**, **Infra** (edge functions, GitHub Actions, curl, the bot) and
+  **Other** (anything unrecognised, such as a local dev server).
+- `people` / `ips`: distinct client IPs. The closest thing to "people" without a client identifier.
   Shared households, VPNs and mobile carriers undercount; rotating IPs overcount slightly.
-- `ip_ua`: distinct IP + User-Agent pairs. Splits two different browsers behind one IP.
+- `ip+browser`: distinct IP + User-Agent pairs. Splits two different browsers behind one IP.
 - `requests`: non-preflight requests to `/rest/v1/*` and `/functions/v1/*`.
-- `errors`: responses with status 400 or higher.
+- `errors`: responses with status 400 or higher. Yellow when some fail, red when a quarter or more do.
+- "older build" rows are clients that predate the label header; they shrink as users update.
+- `--no-color` or the `NO_COLOR` env var disables colour.
 
 ## Auth
 

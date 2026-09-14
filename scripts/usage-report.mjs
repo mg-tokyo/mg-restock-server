@@ -3,14 +3,15 @@
 //
 // Reads `edge_logs` through the Supabase Management API (Log Explorer backend). Nothing is
 // sent by clients beyond the requests they already make; tools label themselves with the
-// `x-client-info` header (qpm-gr/<ver>, restock-tracker, mgtokyo-discord-bot, gemini-server-poll).
+// `x-client-info` header (qpm-gr/<ver>, restock-tracker, mgtokyo-discord-bot, edge-fn/*, ...).
 //
-//   node scripts/usage-report.mjs                # last 24h, all tables
+//   node scripts/usage-report.mjs                # last 24h
 //   node scripts/usage-report.mjs --hours 6      # shorter window (free plan retains 1 day)
 //   node scripts/usage-report.mjs --hourly       # distinct IPs per hour (concurrency proxy)
 //   node scripts/usage-report.mjs --paths        # per tool x path breakdown
 //   node scripts/usage-report.mjs --save         # append summary to data/usage-history.jsonl
 //   node scripts/usage-report.mjs --json         # raw JSON instead of tables
+//   node scripts/usage-report.mjs --no-color
 //
 // Auth: SUPABASE_ACCESS_TOKEN env (a personal access token, sbp_...). When unset on Windows the
 // script reads the token the Supabase CLI stored in Credential Manager (`supabase login`).
@@ -28,6 +29,16 @@ const CRED_TARGET = "Supabase CLI:supabase";
 const args = parseArgs(process.argv.slice(2));
 const HOURS = Number(args.hours ?? 24);
 if (!Number.isFinite(HOURS) || HOURS <= 0) die("--hours must be a positive number");
+
+const COLOR = !args["no-color"] && !process.env.NO_COLOR && process.stdout.isTTY;
+const c = {
+  bold: (s) => (COLOR ? `\x1b[1m${s}\x1b[0m` : s),
+  dim: (s) => (COLOR ? `\x1b[2m${s}\x1b[0m` : s),
+  green: (s) => (COLOR ? `\x1b[32m${s}\x1b[0m` : s),
+  yellow: (s) => (COLOR ? `\x1b[33m${s}\x1b[0m` : s),
+  red: (s) => (COLOR ? `\x1b[31m${s}\x1b[0m` : s),
+  cyan: (s) => (COLOR ? `\x1b[36m${s}\x1b[0m` : s),
+};
 
 function parseArgs(argv) {
   const out = {};
@@ -113,7 +124,7 @@ function isoNoMillis(d) {
   return d.toISOString().replace(/\.\d{3}Z$/, "Z");
 }
 
-async function runLogQuery(token, projectRef, sql, { start, end }) {
+async function runLogQuery(token, projectRef, sql, { start, end }, attempt = 1) {
   const url = new URL(`https://api.supabase.com/v1/projects/${projectRef}/analytics/endpoints/logs.all`);
   url.searchParams.set("sql", sql);
   url.searchParams.set("iso_timestamp_start", isoNoMillis(start));
@@ -127,6 +138,11 @@ async function runLogQuery(token, projectRef, sql, { start, end }) {
     throw new Error(`HTTP ${res.status}: ${text.slice(0, 200)}`);
   }
   if (!res.ok || body.error) {
+    // The log backend fails intermittently with "Backend error! Retry your query."
+    if (attempt < 3 && /backend error/i.test(String(body.error ?? ""))) {
+      await new Promise((r) => setTimeout(r, 1500 * attempt));
+      return runLogQuery(token, projectRef, sql, { start, end }, attempt + 1);
+    }
     throw new Error(`HTTP ${res.status}: ${body.error || text.slice(0, 200)}`);
   }
   return body.result ?? [];
@@ -144,11 +160,12 @@ where r.method != 'OPTIONS'
   and (r.path like '/rest/v1/%' or r.path like '/functions/v1/%')`;
 
 // Requests without a label are grouped by how they arrived so old clients still show up.
+// supabase-js may send its default label joined with ours ("supabase-js/..., edge-fn/x").
 const TOOL_EXPR = `
 coalesce(
   case
     when h.x_client_info like '%, %' then regexp_extract(h.x_client_info, r', ([^,]+)$')
-    when h.x_client_info like 'supabase-js/%runtime=deno%' then 'edge-functions (cron: restock-poll, weather-events)'
+    when h.x_client_info like 'supabase-js/%runtime=deno%' then 'edge-functions (default label)'
     else h.x_client_info
   end,
   case
@@ -161,6 +178,14 @@ coalesce(
     else 'unlabeled: unknown'
   end
 )`;
+
+// One row per tool x IP; the people totals are computed in JS from this (the log backend
+// rejects CTEs and IN-subqueries).
+const SQL_TOOL_IPS = `
+select ${TOOL_EXPR} as tool, h.cf_connecting_ip as ip, count(*) as requests
+${BASE_FROM}
+group by 1, 2
+limit 20000`;
 
 const SQL_BY_TOOL = `
 select ${TOOL_EXPR} as tool,
@@ -192,17 +217,93 @@ group by 1, 2
 order by 1 desc, ips desc
 limit 500`;
 
-function fmtTable(rows, columns) {
-  if (rows.length === 0) return "(no rows)";
-  const widths = columns.map((c) => Math.max(c.label.length, ...rows.map((r) => String(c.get(r)).length)));
-  const line = (cells) => cells.map((v, i) => (columns[i].right ? String(v).padStart(widths[i]) : String(v).padEnd(widths[i]))).join("  ");
-  const out = [line(columns.map((c) => c.label)), line(widths.map((w) => "-".repeat(w)))];
-  for (const r of rows) out.push(line(columns.map((c) => c.get(r))));
+// Presentation: same predicates as the SQL, applied to the label for grouping and naming.
+const USER_LABELS = [
+  [/^qpm-gr\//, (t) => `QPM  ${t.slice("qpm-gr/".length)}`],
+  [/^unlabeled: userscript/, () => "QPM  (older build, userscript)"],
+  [/^unlabeled: browser @ magicgarden\.gg/, () => "QPM  (older build, browser fetch)"],
+  [/^restock-tracker/, () => "restock-tracker"],
+  [/^unlabeled: browser @ (mg-tokyo|ryandt2305-cpu)\.github\.io/, () => "restock-tracker  (older build)"],
+];
+const INFRA_LABELS = [
+  [/^edge-fn\//, (t) => `edge function  ${t.slice("edge-fn/".length)}`],
+  [/^edge-functions/, () => "edge functions  (default label, pre-deploy)"],
+  [/^gh-actions\//, (t) => `GitHub Actions  ${t.slice("gh-actions/".length)}`],
+  [/^gemini-server-poll/, () => "GitHub Actions  poll-weather (node)"],
+  [/^unlabeled: node$/, () => "GitHub Actions  poll-weather (older build)"],
+  [/^mgtokyo-discord-bot/, () => "Discord bot"],
+  [/^unlabeled: curl\//, (t) => `curl  ${t.slice("unlabeled: curl/".length)}`],
+];
+
+function classify(tool) {
+  for (const [re, name] of USER_LABELS) if (re.test(tool)) return { group: "users", name: name(tool) };
+  for (const [re, name] of INFRA_LABELS) if (re.test(tool)) return { group: "infra", name: name(tool) };
+  return { group: "other", name: tool.replace(/^unlabeled: /, "") };
+}
+
+// People = distinct IPs across user-facing tools only. Infra rows (edge functions, pollers,
+// workflow curl, the bot, probes) are excluded; one person using two tools counts once.
+function computePeople(toolIpRows) {
+  const qpm = new Set();
+  const tracker = new Set();
+  let requests = 0;
+  for (const r of toolIpRows) {
+    const { group, name } = classify(r.tool);
+    if (group !== "users") continue;
+    (name.startsWith("QPM") ? qpm : tracker).add(r.ip);
+    requests += Number(r.requests);
+  }
+  const both = [...qpm].filter((ip) => tracker.has(ip)).length;
+  return { people: qpm.size + tracker.size - both, qpm: qpm.size, tracker: tracker.size, both, requests };
+}
+
+function n(v) {
+  return Number(v).toLocaleString("en-US");
+}
+
+function fmtTable(rows, columns, indent = "  ") {
+  if (rows.length === 0) return `${indent}${c.dim("(none)")}`;
+  const cells = rows.map((r) => columns.map((col) => String(col.get(r))));
+  const widths = columns.map((col, i) => Math.max(col.label.length, ...cells.map((row) => row[i].length)));
+  const line = (vals, paint) =>
+    indent +
+    vals
+      .map((v, i) => {
+        const padded = columns[i].right ? v.padStart(widths[i]) : v.padEnd(widths[i]);
+        return paint ? paint(padded, i, v) : padded;
+      })
+      .join("   ");
+  const out = [c.dim(line(columns.map((col) => col.label)))];
+  cells.forEach((row, ri) => {
+    out.push(
+      line(row, (padded, i) => {
+        const col = columns[i];
+        if (col.paint) return col.paint(padded, rows[ri]);
+        return padded;
+      })
+    );
+  });
   return out.join("\n");
 }
 
+const paintErrors = (padded, row) => {
+  const e = Number(row.errors);
+  if (e === 0) return c.dim(padded);
+  const ratio = e / Math.max(1, Number(row.requests));
+  return ratio >= 0.25 ? c.red(padded) : c.yellow(padded);
+};
+
 function hourLabel(us) {
   return new Date(Number(us) / 1000).toISOString().slice(0, 13) + ":00Z";
+}
+
+function fmtWindow(start, end) {
+  const f = (d) => d.toISOString().slice(0, 16).replace("T", " ");
+  return `${f(start)} → ${f(end)} UTC`;
+}
+
+function section(title) {
+  console.log(`\n${c.bold(c.cyan(title))}`);
 }
 
 async function main() {
@@ -213,7 +314,11 @@ async function main() {
   const start = new Date(end.getTime() - HOURS * 3600 * 1000);
   const window = { start, end };
 
-  const byTool = await runLogQuery(token, projectRef, SQL_BY_TOOL, window);
+  const [byTool, toolIps] = await Promise.all([
+    runLogQuery(token, projectRef, SQL_BY_TOOL, window),
+    runLogQuery(token, projectRef, SQL_TOOL_IPS, window),
+  ]);
+  const totals = computePeople(toolIps);
   const byToolPath = args.paths ? await runLogQuery(token, projectRef, SQL_BY_TOOL_PATH, window) : null;
   const hourly = args.hourly ? await runLogQuery(token, projectRef, SQL_HOURLY, window) : null;
 
@@ -221,6 +326,11 @@ async function main() {
     generatedAt: end.toISOString(),
     windowHours: HOURS,
     projectRef,
+    people: totals.people,
+    qpmPeople: totals.qpm,
+    trackerPeople: totals.tracker,
+    bothTools: totals.both,
+    userRequests: totals.requests,
     tools: byTool.map((r) => ({
       tool: r.tool,
       ips: Number(r.ips),
@@ -240,45 +350,73 @@ async function main() {
     return;
   }
 
-  console.log(`Supabase usage for project ${projectRef}, last ${HOURS}h (${isoNoMillis(start)} to ${isoNoMillis(end)})`);
-  console.log("ips = distinct client IPs (approx. people); ip_ua = distinct IP + browser pairs; OPTIONS preflights excluded\n");
+  const windowLabel = HOURS === 24 ? "last 24 hours" : HOURS < 1 ? `last ${Math.round(HOURS * 60)} min` : `last ${HOURS} hours`;
+  console.log(`\n${c.bold("Supabase usage")}  ${c.dim(`${projectRef} · ${windowLabel} · ${fmtWindow(start, end)}`)}`);
+
+  console.log(`\n  ${c.bold(c.green(n(summary.people)))} ${c.bold("people")}   ${c.dim("distinct IPs across QPM + restock-tracker")}`);
   console.log(
-    fmtTable(byTool, [
-      { label: "tool", get: (r) => r.tool },
-      { label: "ips", get: (r) => r.ips, right: true },
-      { label: "ip_ua", get: (r) => r.ip_ua, right: true },
-      { label: "requests", get: (r) => r.requests, right: true },
-      { label: "errors", get: (r) => r.errors, right: true },
-    ])
+    `  ${c.dim("QPM")} ${n(summary.qpmPeople)}   ${c.dim("restock-tracker")} ${n(summary.trackerPeople)}   ${c.dim("both")} ${n(summary.bothTools)}   ${c.dim("requests")} ${n(summary.userRequests)}`
   );
 
+  const grouped = { users: [], infra: [], other: [] };
+  for (const r of byTool) {
+    const { group, name } = classify(r.tool);
+    grouped[group].push({ ...r, name });
+  }
+  const toolColumns = [
+    { label: "tool", get: (r) => r.name },
+    { label: "people", get: (r) => n(r.ips), right: true },
+    { label: "ip+browser", get: (r) => n(r.ip_ua), right: true },
+    { label: "requests", get: (r) => n(r.requests), right: true },
+    { label: "errors", get: (r) => n(r.errors), right: true, paint: paintErrors },
+  ];
+
+  section("Users");
+  console.log(fmtTable(grouped.users, toolColumns));
+  section("Infra");
+  console.log(fmtTable(grouped.infra, [{ ...toolColumns[0] }, { ...toolColumns[1], label: "ips" }, ...toolColumns.slice(2)]));
+  if (grouped.other.length) {
+    section("Other");
+    console.log(fmtTable(grouped.other, [{ ...toolColumns[0] }, { ...toolColumns[1], label: "ips" }, ...toolColumns.slice(2)]));
+  }
+
   if (byToolPath) {
-    console.log("\nPer tool and path:\n");
+    section("Per tool and path");
     console.log(
-      fmtTable(byToolPath, [
-        { label: "tool", get: (r) => r.tool },
-        { label: "method", get: (r) => r.method },
-        { label: "path", get: (r) => r.path },
-        { label: "ips", get: (r) => r.ips, right: true },
-        { label: "requests", get: (r) => r.requests, right: true },
-        { label: "errors", get: (r) => r.errors, right: true },
-      ])
+      fmtTable(
+        byToolPath.map((r) => ({ ...r, name: classify(r.tool).name })),
+        [
+          { label: "tool", get: (r) => r.name },
+          { label: "method", get: (r) => r.method },
+          { label: "path", get: (r) => r.path.replace(/^\/rest\/v1\//, "").replace(/^\/functions\/v1\//, "fn:") },
+          { label: "ips", get: (r) => n(r.ips), right: true },
+          { label: "requests", get: (r) => n(r.requests), right: true },
+          { label: "errors", get: (r) => n(r.errors), right: true, paint: paintErrors },
+        ]
+      )
     );
   }
 
   if (hourly) {
-    console.log("\nDistinct IPs per hour (UTC):\n");
+    section("Distinct IPs per hour (UTC)");
     console.log(
-      fmtTable(hourly, [
-        { label: "hour", get: (r) => hourLabel(r.hour_us) },
-        { label: "tool", get: (r) => r.tool },
-        { label: "ips", get: (r) => r.ips, right: true },
-        { label: "requests", get: (r) => r.requests, right: true },
-      ])
+      fmtTable(
+        hourly.map((r) => ({ ...r, name: classify(r.tool).name })),
+        [
+          { label: "hour", get: (r) => hourLabel(r.hour_us) },
+          { label: "tool", get: (r) => r.name },
+          { label: "ips", get: (r) => n(r.ips), right: true },
+          { label: "requests", get: (r) => n(r.requests), right: true },
+        ]
+      )
     );
   }
 
-  if (args.save) console.log(`\nAppended summary to ${HISTORY_FILE}`);
+  console.log(
+    `\n${c.dim("people = distinct client IPs (shared households/VPNs undercount). Preflights excluded. Older builds are grouped until users update.")}`
+  );
+  if (args.save) console.log(c.dim(`Appended summary to ${HISTORY_FILE}`));
+  console.log();
 }
 
 main().catch((err) => die(err.message));
