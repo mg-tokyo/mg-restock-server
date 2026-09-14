@@ -30,6 +30,7 @@ jobs:
             -H "apikey: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}" \
             -H "Authorization: Bearer ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}" \
             -H "Content-Type: application/json" \
+            -H "x-client-info: gh-actions/poll-shops" \
             -X POST "${{ secrets.SUPABASE_URL }}/rest/v1/rpc/check_restock_pipeline_health" \
             -d '{}')
           STALE=$(echo "$RESULT" | jq -r '.is_stale')
@@ -46,6 +47,7 @@ jobs:
             -H "apikey: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}" \
             -H "Authorization: Bearer ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}" \
             -H "Content-Type: application/json" \
+            -H "x-client-info: gh-actions/poll-shops" \
             -X POST "${{ secrets.SUPABASE_URL }}/rest/v1/rpc/snapshot_restock_predictions" \
             -d "{}"
 
@@ -55,6 +57,7 @@ jobs:
             -H "apikey: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}" \
             -H "Authorization: Bearer ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}" \
             -H "Content-Type: application/json" \
+            -H "x-client-info: gh-actions/poll-shops" \
             -X POST "${{ secrets.SUPABASE_URL }}/rest/v1/rpc/score_restock_prediction_outcomes" \
             -d '{"p_max_rows":20000}'
 
@@ -65,6 +68,7 @@ jobs:
               -H "apikey: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}" \
               -H "Authorization: Bearer ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}" \
               -H "Content-Type: application/json" \
+              -H "x-client-info: gh-actions/poll-shops" \
               -X POST "${{ secrets.SUPABASE_URL }}/rest/v1/rpc/run_restock_item_model_backtests" \
               -d '{"p_lookback_days":90,"p_min_samples":12,"p_min_backtest_events":8,"p_max_backtest_events":40}')
             if [ "$HTTP_CODE" -ge 400 ]; then
@@ -83,5 +87,6 @@ jobs:
             -H "apikey: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}" \
             -H "Authorization: Bearer ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}" \
             -H "Content-Type: application/json" \
+            -H "x-client-info: gh-actions/poll-shops" \
             -X POST "${{ secrets.SUPABASE_URL }}/rest/v1/rpc/rebuild_weather_summary" \
             -d "{}"

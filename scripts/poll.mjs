@@ -72,6 +72,7 @@ const SUPABASE_HEADERS = SUPABASE_URL && SUPABASE_SERVICE_ROLE_KEY
       Authorization: `Bearer ${SUPABASE_SERVICE_ROLE_KEY}`,
       "Content-Type": "application/json",
       Prefer: "resolution=merge-duplicates,return=representation",
+      "x-client-info": "gemini-server-poll",
     }
   : null;
 const WRITE_JSON = process.env.WRITE_JSON === "1" || !SUPABASE_HEADERS;

@@ -18,6 +18,7 @@
     "restock:weather-diagnostics": "node scripts/restock-weather-diagnostics.mjs",
     "restock:backtest-summary": "node scripts/restock-backtest-summary.mjs",
     "seed": "npx tsx scripts/seed-magicshopkeeper.ts",
+    "usage": "node scripts/usage-report.mjs",
     "test": "node --test \"tests/*.test.mjs\""
   },
   "dependencies": {

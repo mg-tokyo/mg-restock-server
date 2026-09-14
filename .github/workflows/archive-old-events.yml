@@ -57,4 +57,5 @@ jobs:
             -H "apikey: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}" \
             -H "Authorization: Bearer ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}" \
             -H "Content-Type: application/json" \
+            -H "x-client-info: gh-actions/archive-old-events" \
             -X POST "${{ secrets.SUPABASE_URL }}/rest/v1/rpc/run_storage_retention" -d '{}'

@@ -37,6 +37,7 @@ const SUPABASE_HEADERS = SUPABASE_URL && SUPABASE_SERVICE_ROLE_KEY
     Authorization: `Bearer ${SUPABASE_SERVICE_ROLE_KEY}`,
     "Content-Type": "application/json",
     Prefer: "resolution=ignore-duplicates,return=representation",
+    "x-client-info": "gemini-server-poll",
   }
   : null;
 
